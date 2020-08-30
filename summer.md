@@ -29,7 +29,7 @@ Cada estágio, opera sobre o documento recebido e passa o resultado para o próx
 
 Quando chegar a hora de combinar você sempre pode consultar os exemplos e a documentação, [link](https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/#db-collection-aggregate-stages).
 
-Um estágio em mongodb é definido como um objeto dentro da função aggregate, você pode defini-los como um array de objetos, sendo único parâmetro da função ou como um objecto como cada parâmetro da função. Como no exemplo abaixo:
+Um estágio em mongodb é definido como um objeto dentro da função aggregate, você pode defini-los como um array de objetos, sendo único parâmetro da função ou como um objeto como cada parâmetro da função. Como no exemplo abaixo:
 
 ```jsx
 db.digimons.aggregate([
@@ -64,12 +64,12 @@ db.digimons.aggregate([
 { "_id" : 46, "name" : "Veemon", "hp" : 1040, "memoria" : 5 }
 ```
 
-Antes de fazer os exercícios de fixação, salve o [link](https://raw.githubusercontent.com/nato-re/digimongodb/master/digimon.json), clicando encima dele com o botão direito. Depois execute o comando aseguir substituindo `/caminho-para-pasta/que-salvou` pelo caminha da pasta que você salvou o banco.
+Antes de fazer os exercícios de fixação, salve o [link](https://raw.githubusercontent.com/nato-re/digimongodb/master/digimon.json), clicando encima dele com o botão direito. Depois execute o comando a seguir substituindo `/caminho-para-pasta/que-salvou` pelo caminho da pasta que você salvou o banco.
 ```shell
 mongoimport --db digimongo --collection digimons --file /caminho-para-pasta/que-salvou 
 ```
 
-É **importante** resaltar que, a ordem dos estágios na maioria das vezes **faz diferença**. O primeiro estágio da pipeline, sempre recebe todos os documentos da coleção e estágios posteriores: recebem os documentos manipulados pelos estágios anteriores.
+É **importante** ressaltar que, a ordem dos estágios na maioria das vezes **faz diferença**. O primeiro estágio da pipeline, sempre recebe todos os documentos da coleção e estágios posteriores: recebem os documentos manipulados pelos estágios anteriores.
 
 Vamos começar pelo `$match` e pelo `$project`. Por mais novo que parece, você já teve o contato com as mecânicas deles no conteúdo de `find`.
 
@@ -81,7 +81,7 @@ Assim como o primeiro parâmetro do **.find({~~esse~~})**, o `$match` seleciona 
 
 Com o `$match`, você passa **só os documentos selecionados** para o próximo estágio. Se não existe `$match` na pipeline, todos os documentos do banco são selecionados, assim como um `find` com um objeto vazio como o primeiro parâmetro (`find({})`).
 
-Imagine que você precise achar no banco apenas documentos com o campor value maior que 8000.
+Imagine que você precise achar no banco apenas documentos com o campo value maior que 8000.
 
 ```jsx
 db.example.aggregate([
@@ -166,7 +166,7 @@ Use o próximo link para rever os operadores dos conteúdos passados para combin
 [Link](https://docs.mongodb.com/manual/reference/operator/aggregation/project/#pipe._S_project) para documentação do operador de estágio.
 
 Este operador é como o segundo parâmetro do __find({}, {~~project~~})__.
-Com o ele, você define quais campos serão passados ao próximo estágio da pipeline. Além de poder renomear os campos que deseja e executar [operações](https://docs.mongodb.com/manual/reference/operator/aggregation/) como `$round`, `$push` e `$add`.
+Com ele, você define quais campos serão passados ao próximo estágio da pipeline. Além de poder renomear os campos que deseja e executar [operações](https://docs.mongodb.com/manual/reference/operator/aggregation/) como `$round`, `$push` e `$add`.
 
 
 ```jsx
