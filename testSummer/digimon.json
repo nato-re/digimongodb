@@ -1,0 +1,3735 @@
+{
+  "_id": 1,
+  "Digimon": "Kuramon",
+  "Stage": "Baby",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 2,
+  "Equip Slots": 0,
+  "HP": 590,
+  "SP": 77,
+  "Atk": 79,
+  "Def": 69,
+  "Int": 68,
+  "Spd": 95
+}
+{
+  "_id": 2,
+  "Digimon": "Pabumon",
+  "Stage": "Baby",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 2,
+  "Equip Slots": 0,
+  "HP": 950,
+  "SP": 62,
+  "Atk": 76,
+  "Def": 76,
+  "Int": 69,
+  "Spd": 68
+}
+{
+  "_id": 3,
+  "Digimon": "Punimon",
+  "Stage": "Baby",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 2,
+  "Equip Slots": 0,
+  "HP": 870,
+  "SP": 50,
+  "Atk": 97,
+  "Def": 87,
+  "Int": 50,
+  "Spd": 75
+}
+{
+  "_id": 4,
+  "Digimon": "Botamon",
+  "Stage": "Baby",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 2,
+  "Equip Slots": 0,
+  "HP": 690,
+  "SP": 68,
+  "Atk": 77,
+  "Def": 95,
+  "Int": 76,
+  "Spd": 61
+}
+{
+  "_id": 5,
+  "Digimon": "Poyomon",
+  "Stage": "Baby",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 2,
+  "Equip Slots": 0,
+  "HP": 540,
+  "SP": 98,
+  "Atk": 54,
+  "Def": 59,
+  "Int": 95,
+  "Spd": 86
+}
+{
+  "_id": 6,
+  "Digimon": "Koromon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Fire",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 940,
+  "SP": 52,
+  "Atk": 109,
+  "Def": 93,
+  "Int": 52,
+  "Spd": 76
+}
+{
+  "_id": 7,
+  "Digimon": "Tanemon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Plant",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 1030,
+  "SP": 64,
+  "Atk": 85,
+  "Def": 82,
+  "Int": 73,
+  "Spd": 69
+}
+{
+  "_id": 8,
+  "Digimon": "Tsunomon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Earth",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 930,
+  "SP": 54,
+  "Atk": 107,
+  "Def": 92,
+  "Int": 54,
+  "Spd": 76
+}
+{
+  "_id": 9,
+  "Digimon": "Tsumemon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Dark",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 930,
+  "SP": 64,
+  "Atk": 108,
+  "Def": 64,
+  "Int": 54,
+  "Spd": 93
+}
+{
+  "_id": 10,
+  "Digimon": "Tokomon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 640,
+  "SP": 86,
+  "Atk": 76,
+  "Def": 74,
+  "Int": 74,
+  "Spd": 103
+}
+{
+  "_id": 11,
+  "Digimon": "Nyaromon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Light",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 540,
+  "SP": 107,
+  "Atk": 54,
+  "Def": 64,
+  "Int": 103,
+  "Spd": 94
+}
+{
+  "_id": 12,
+  "Digimon": "Pagumon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Dark",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 550,
+  "SP": 103,
+  "Atk": 60,
+  "Def": 63,
+  "Int": 102,
+  "Spd": 93
+}
+{
+  "_id": 13,
+  "Digimon": "Yokomon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Plant",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 1040,
+  "SP": 64,
+  "Atk": 82,
+  "Def": 82,
+  "Int": 75,
+  "Spd": 69
+}
+{
+  "_id": 14,
+  "Digimon": "Bukamon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Water",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 830,
+  "SP": 93,
+  "Atk": 54,
+  "Def": 74,
+  "Int": 103,
+  "Spd": 69
+}
+{
+  "_id": 15,
+  "Digimon": "Motimon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 1030,
+  "SP": 63,
+  "Atk": 82,
+  "Def": 81,
+  "Int": 78,
+  "Spd": 69
+}
+{
+  "_id": 16,
+  "Digimon": "Wanyamon",
+  "Stage": "In-Training",
+  "Type": "Free",
+  "Attribute": "Wind",
+  "Memory": 3,
+  "Equip Slots": 0,
+  "HP": 830,
+  "SP": 82,
+  "Atk": 79,
+  "Def": 75,
+  "Int": 75,
+  "Spd": 82
+}
+{
+  "_id": 17,
+  "Digimon": "Agumon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1030,
+  "SP": 59,
+  "Atk": 131,
+  "Def": 103,
+  "Int": 54,
+  "Spd": 86
+}
+{
+  "_id": 18,
+  "Digimon": "Agumon (Blk)",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1020,
+  "SP": 56,
+  "Atk": 124,
+  "Def": 108,
+  "Int": 56,
+  "Spd": 85
+}
+{
+  "_id": 19,
+  "Digimon": "Armadillomon",
+  "Stage": "Rookie",
+  "Type": "Free",
+  "Attribute": "Earth",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 1160,
+  "SP": 85,
+  "Atk": 67,
+  "Def": 111,
+  "Int": 65,
+  "Spd": 72
+}
+{
+  "_id": 20,
+  "Digimon": "Impmon",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 530,
+  "SP": 114,
+  "Atk": 83,
+  "Def": 65,
+  "Int": 114,
+  "Spd": 102
+}
+{
+  "_id": 21,
+  "Digimon": "Elecmon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Electric",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 930,
+  "SP": 93,
+  "Atk": 82,
+  "Def": 79,
+  "Int": 79,
+  "Spd": 90
+}
+{
+  "_id": 22,
+  "Digimon": "Otamamon",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Water",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 930,
+  "SP": 105,
+  "Atk": 52,
+  "Def": 75,
+  "Int": 113,
+  "Spd": 78
+}
+{
+  "_id": 23,
+  "Digimon": "Gaomon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Neutral",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1030,
+  "SP": 69,
+  "Atk": 118,
+  "Def": 74,
+  "Int": 66,
+  "Spd": 101
+}
+{
+  "_id": 24,
+  "Digimon": "Gazimon",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 970,
+  "SP": 71,
+  "Atk": 123,
+  "Def": 64,
+  "Int": 59,
+  "Spd": 102
+}
+{
+  "_id": 25,
+  "Digimon": "Gabumon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Fire",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 980,
+  "SP": 88,
+  "Atk": 94,
+  "Def": 81,
+  "Int": 79,
+  "Spd": 91
+}
+{
+  "_id": 26,
+  "Digimon": "Gabumon (Blk)",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 950,
+  "SP": 83,
+  "Atk": 99,
+  "Def": 89,
+  "Int": 74,
+  "Spd": 91
+}
+{
+  "_id": 27,
+  "Digimon": "Guilmon",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1050,
+  "SP": 69,
+  "Atk": 133,
+  "Def": 74,
+  "Int": 54,
+  "Spd": 101
+}
+{
+  "_id": 28,
+  "Digimon": "Kudamon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 590,
+  "SP": 128,
+  "Atk": 53,
+  "Def": 74,
+  "Int": 117,
+  "Spd": 105
+}
+{
+  "_id": 29,
+  "Digimon": "Keramon",
+  "Stage": "Rookie",
+  "Type": "Free",
+  "Attribute": "Dark",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1030,
+  "SP": 74,
+  "Atk": 123,
+  "Def": 69,
+  "Int": 61,
+  "Spd": 101
+}
+{
+  "_id": 30,
+  "Digimon": "Gotsumon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Earth",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 790,
+  "SP": 79,
+  "Atk": 93,
+  "Def": 118,
+  "Int": 90,
+  "Spd": 72
+}
+{
+  "_id": 31,
+  "Digimon": "Goblimon",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Earth",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 1050,
+  "SP": 51,
+  "Atk": 115,
+  "Def": 110,
+  "Int": 51,
+  "Spd": 84
+}
+{
+  "_id": 32,
+  "Digimon": "Gomamon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Water",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1160,
+  "SP": 69,
+  "Atk": 93,
+  "Def": 93,
+  "Int": 81,
+  "Spd": 79
+}
+{
+  "_id": 33,
+  "Digimon": "Syakomon",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Water",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 870,
+  "SP": 100,
+  "Atk": 53,
+  "Def": 86,
+  "Int": 112,
+  "Spd": 78
+}
+{
+  "_id": 34,
+  "Digimon": "Solarmon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 1030,
+  "SP": 88,
+  "Atk": 69,
+  "Def": 108,
+  "Int": 71,
+  "Spd": 77
+}
+{
+  "_id": 35,
+  "Digimon": "Terriermon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 690,
+  "SP": 93,
+  "Atk": 84,
+  "Def": 75,
+  "Int": 84,
+  "Spd": 112
+}
+{
+  "_id": 36,
+  "Digimon": "Tentomon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Plant",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 750,
+  "SP": 79,
+  "Atk": 86,
+  "Def": 110,
+  "Int": 93,
+  "Spd": 73
+}
+{
+  "_id": 37,
+  "Digimon": "ToyAgumon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Neutral",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 1110,
+  "SP": 87,
+  "Atk": 72,
+  "Def": 112,
+  "Int": 63,
+  "Spd": 71
+}
+{
+  "_id": 38,
+  "Digimon": "Dorumon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Neutral",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1020,
+  "SP": 65,
+  "Atk": 128,
+  "Def": 79,
+  "Int": 56,
+  "Spd": 101
+}
+{
+  "_id": 39,
+  "Digimon": "Hagurumon",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 1090,
+  "SP": 91,
+  "Atk": 66,
+  "Def": 110,
+  "Int": 69,
+  "Spd": 71
+}
+{
+  "_id": 40,
+  "Digimon": "Patamon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Wind",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 880,
+  "SP": 93,
+  "Atk": 79,
+  "Def": 74,
+  "Int": 92,
+  "Spd": 90
+}
+{
+  "_id": 41,
+  "Digimon": "Hackmon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Fire",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1030,
+  "SP": 59,
+  "Atk": 118,
+  "Def": 108,
+  "Int": 63,
+  "Spd": 85
+}
+{
+  "_id": 42,
+  "Digimon": "Palmon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1140,
+  "SP": 65,
+  "Atk": 103,
+  "Def": 90,
+  "Int": 80,
+  "Spd": 79
+}
+{
+  "_id": 43,
+  "Digimon": "DemiDevimon",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 650,
+  "SP": 87,
+  "Atk": 89,
+  "Def": 76,
+  "Int": 89,
+  "Spd": 111
+}
+{
+  "_id": 44,
+  "Digimon": "Biyomon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 830,
+  "SP": 93,
+  "Atk": 85,
+  "Def": 79,
+  "Int": 85,
+  "Spd": 91
+}
+{
+  "_id": 45,
+  "Digimon": "Falcomon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 740,
+  "SP": 93,
+  "Atk": 94,
+  "Def": 79,
+  "Int": 79,
+  "Spd": 113
+}
+{
+  "_id": 46,
+  "Digimon": "Veemon",
+  "Stage": "Rookie",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 1040,
+  "SP": 74,
+  "Atk": 130,
+  "Def": 74,
+  "Int": 53,
+  "Spd": 101
+}
+{
+  "_id": 47,
+  "Digimon": "Salamon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 540,
+  "SP": 118,
+  "Atk": 59,
+  "Def": 69,
+  "Int": 119,
+  "Spd": 97
+}
+{
+  "_id": 48,
+  "Digimon": "Betamon",
+  "Stage": "Rookie",
+  "Type": "Virus",
+  "Attribute": "Water",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 870,
+  "SP": 101,
+  "Atk": 61,
+  "Def": 76,
+  "Int": 113,
+  "Spd": 78
+}
+{
+  "_id": 49,
+  "Digimon": "Hawkmon",
+  "Stage": "Rookie",
+  "Type": "Free",
+  "Attribute": "Wind",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 690,
+  "SP": 88,
+  "Atk": 99,
+  "Def": 79,
+  "Int": 83,
+  "Spd": 114
+}
+{
+  "_id": 50,
+  "Digimon": "Lalamon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 1100,
+  "SP": 74,
+  "Atk": 87,
+  "Def": 87,
+  "Int": 79,
+  "Spd": 79
+}
+{
+  "_id": 51,
+  "Digimon": "Lucemon",
+  "Stage": "Rookie",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1230,
+  "SP": 148,
+  "Atk": 59,
+  "Def": 104,
+  "Int": 208,
+  "Spd": 119
+}
+{
+  "_id": 52,
+  "Digimon": "Renamon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 5,
+  "Equip Slots": 1,
+  "HP": 930,
+  "SP": 93,
+  "Atk": 89,
+  "Def": 74,
+  "Int": 89,
+  "Spd": 93
+}
+{
+  "_id": 53,
+  "Digimon": "Lopmon",
+  "Stage": "Rookie",
+  "Type": "Data",
+  "Attribute": "Earth",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 790,
+  "SP": 79,
+  "Atk": 103,
+  "Def": 68,
+  "Int": 103,
+  "Spd": 85
+}
+{
+  "_id": 54,
+  "Digimon": "Wormmon",
+  "Stage": "Rookie",
+  "Type": "Free",
+  "Attribute": "Plant",
+  "Memory": 4,
+  "Equip Slots": 1,
+  "HP": 760,
+  "SP": 76,
+  "Atk": 92,
+  "Def": 111,
+  "Int": 90,
+  "Spd": 71
+}
+{
+  "_id": 55,
+  "Digimon": "IceDevimon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Water",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 990,
+  "SP": 94,
+  "Atk": 140,
+  "Def": 89,
+  "Int": 118,
+  "Spd": 92
+}
+{
+  "_id": 56,
+  "Digimon": "Aquilamon",
+  "Stage": "Champion",
+  "Type": "Free",
+  "Attribute": "Wind",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 840,
+  "SP": 108,
+  "Atk": 109,
+  "Def": 89,
+  "Int": 89,
+  "Spd": 143
+}
+{
+  "_id": 57,
+  "Digimon": "Ankylomon",
+  "Stage": "Champion",
+  "Type": "Free",
+  "Attribute": "Earth",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1330,
+  "SP": 98,
+  "Atk": 89,
+  "Def": 133,
+  "Int": 79,
+  "Spd": 79
+}
+{
+  "_id": 58,
+  "Digimon": "Ikkakumon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Water",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1330,
+  "SP": 84,
+  "Atk": 118,
+  "Def": 102,
+  "Int": 94,
+  "Spd": 90
+}
+{
+  "_id": 59,
+  "Digimon": "Wizardmon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Dark",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 690,
+  "SP": 138,
+  "Atk": 74,
+  "Def": 79,
+  "Int": 143,
+  "Spd": 118
+}
+{
+  "_id": 60,
+  "Digimon": "Woodmon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Plant",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1480,
+  "SP": 74,
+  "Atk": 109,
+  "Def": 103,
+  "Int": 89,
+  "Spd": 88
+}
+{
+  "_id": 61,
+  "Digimon": "ExVeemon",
+  "Stage": "Champion",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1030,
+  "SP": 118,
+  "Atk": 104,
+  "Def": 94,
+  "Int": 94,
+  "Spd": 118
+}
+{
+  "_id": 62,
+  "Digimon": "Angemon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 940,
+  "SP": 94,
+  "Atk": 128,
+  "Def": 89,
+  "Int": 128,
+  "Spd": 99
+}
+{
+  "_id": 63,
+  "Digimon": "Ogremon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Earth",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1230,
+  "SP": 64,
+  "Atk": 155,
+  "Def": 118,
+  "Int": 64,
+  "Spd": 97
+}
+{
+  "_id": 64,
+  "Digimon": "Guardromon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 990,
+  "SP": 84,
+  "Atk": 108,
+  "Def": 138,
+  "Int": 103,
+  "Spd": 79
+}
+{
+  "_id": 65,
+  "Digimon": "GaoGamon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Wind",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 740,
+  "SP": 108,
+  "Atk": 109,
+  "Def": 94,
+  "Int": 99,
+  "Spd": 138
+}
+{
+  "_id": 66,
+  "Digimon": "Kabuterimon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Plant",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 890,
+  "SP": 89,
+  "Atk": 108,
+  "Def": 128,
+  "Int": 116,
+  "Spd": 81
+}
+{
+  "_id": 67,
+  "Digimon": "ShellNumemon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Water",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1280,
+  "SP": 103,
+  "Atk": 79,
+  "Def": 148,
+  "Int": 74,
+  "Spd": 79
+}
+{
+  "_id": 68,
+  "Digimon": "Gargomon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Electric",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1030,
+  "SP": 103,
+  "Atk": 109,
+  "Def": 99,
+  "Int": 89,
+  "Spd": 108
+}
+{
+  "_id": 69,
+  "Digimon": "Garurumon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 890,
+  "SP": 108,
+  "Atk": 99,
+  "Def": 94,
+  "Int": 94,
+  "Spd": 138
+}
+{
+  "_id": 70,
+  "Digimon": "Garurumon (Blk)",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 890,
+  "SP": 108,
+  "Atk": 109,
+  "Def": 104,
+  "Int": 79,
+  "Spd": 133
+}
+{
+  "_id": 71,
+  "Digimon": "Kyubimon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Fire",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 740,
+  "SP": 138,
+  "Atk": 59,
+  "Def": 84,
+  "Int": 138,
+  "Spd": 128
+}
+{
+  "_id": 72,
+  "Digimon": "Growlmon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1180,
+  "SP": 79,
+  "Atk": 143,
+  "Def": 113,
+  "Int": 69,
+  "Spd": 109
+}
+{
+  "_id": 73,
+  "Digimon": "Kurisarimon",
+  "Stage": "Champion",
+  "Type": "Free",
+  "Attribute": "Dark",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1280,
+  "SP": 84,
+  "Atk": 153,
+  "Def": 79,
+  "Int": 64,
+  "Spd": 113
+}
+{
+  "_id": 74,
+  "Digimon": "Greymon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1230,
+  "SP": 74,
+  "Atk": 148,
+  "Def": 118,
+  "Int": 64,
+  "Spd": 104
+}
+{
+  "_id": 75,
+  "Digimon": "Greymon (Blue)",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1280,
+  "SP": 74,
+  "Atk": 153,
+  "Def": 118,
+  "Int": 59,
+  "Spd": 99
+}
+{
+  "_id": 76,
+  "Digimon": "Clockmon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Electric",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1030,
+  "SP": 118,
+  "Atk": 64,
+  "Def": 101,
+  "Int": 133,
+  "Spd": 92
+}
+{
+  "_id": 77,
+  "Digimon": "Kuwagamon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Plant",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1180,
+  "SP": 69,
+  "Atk": 153,
+  "Def": 113,
+  "Int": 59,
+  "Spd": 99
+}
+{
+  "_id": 78,
+  "Digimon": "Gekomon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Water",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1130,
+  "SP": 123,
+  "Atk": 68,
+  "Def": 89,
+  "Int": 128,
+  "Spd": 90
+}
+{
+  "_id": 79,
+  "Digimon": "Geremon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1380,
+  "SP": 99,
+  "Atk": 104,
+  "Def": 128,
+  "Int": 64,
+  "Spd": 78
+}
+{
+  "_id": 80,
+  "Digimon": "GoldNumemon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Light",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1130,
+  "SP": 124,
+  "Atk": 59,
+  "Def": 84,
+  "Int": 143,
+  "Spd": 88
+}
+{
+  "_id": 81,
+  "Digimon": "Cyclonemon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Earth",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 940,
+  "SP": 84,
+  "Atk": 131,
+  "Def": 128,
+  "Int": 93,
+  "Spd": 81
+}
+{
+  "_id": 82,
+  "Digimon": "Sunflowmon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1180,
+  "SP": 113,
+  "Atk": 64,
+  "Def": 89,
+  "Int": 141,
+  "Spd": 86
+}
+{
+  "_id": 83,
+  "Digimon": "Seadramon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Water",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1080,
+  "SP": 118,
+  "Atk": 64,
+  "Def": 99,
+  "Int": 134,
+  "Spd": 88
+}
+{
+  "_id": 84,
+  "Digimon": "GeoGreymon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1330,
+  "SP": 89,
+  "Atk": 143,
+  "Def": 84,
+  "Int": 64,
+  "Spd": 118
+}
+{
+  "_id": 85,
+  "Digimon": "Sukamon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Earth",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1430,
+  "SP": 98,
+  "Atk": 89,
+  "Def": 133,
+  "Int": 69,
+  "Spd": 79
+}
+{
+  "_id": 86,
+  "Digimon": "Starmon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Neutral",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1080,
+  "SP": 98,
+  "Atk": 104,
+  "Def": 109,
+  "Int": 91,
+  "Spd": 101
+}
+{
+  "_id": 87,
+  "Digimon": "Stingmon",
+  "Stage": "Champion",
+  "Type": "Free",
+  "Attribute": "Plant",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1130,
+  "SP": 84,
+  "Atk": 143,
+  "Def": 74,
+  "Int": 74,
+  "Spd": 133
+}
+{
+  "_id": 88,
+  "Digimon": "Socerimon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Water",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1030,
+  "SP": 123,
+  "Atk": 64,
+  "Def": 93,
+  "Int": 148,
+  "Spd": 90
+}
+{
+  "_id": 89,
+  "Digimon": "Tankmon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Electric",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 940,
+  "SP": 84,
+  "Atk": 113,
+  "Def": 141,
+  "Int": 98,
+  "Spd": 81
+}
+{
+  "_id": 90,
+  "Digimon": "Tyrannomon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Fire",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1230,
+  "SP": 59,
+  "Atk": 148,
+  "Def": 125,
+  "Int": 59,
+  "Spd": 97
+}
+{
+  "_id": 91,
+  "Digimon": "Gatomon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 640,
+  "SP": 143,
+  "Atk": 69,
+  "Def": 79,
+  "Int": 143,
+  "Spd": 123
+}
+{
+  "_id": 92,
+  "Digimon": "Devimon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 990,
+  "SP": 94,
+  "Atk": 133,
+  "Def": 84,
+  "Int": 125,
+  "Spd": 97
+}
+{
+  "_id": 93,
+  "Digimon": "Togemon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1330,
+  "SP": 84,
+  "Atk": 108,
+  "Def": 113,
+  "Int": 93,
+  "Spd": 90
+}
+{
+  "_id": 94,
+  "Digimon": "Dorugamon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Earth",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1180,
+  "SP": 84,
+  "Atk": 138,
+  "Def": 89,
+  "Int": 69,
+  "Spd": 123
+}
+{
+  "_id": 95,
+  "Digimon": "Nanimon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Earth",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1070,
+  "SP": 84,
+  "Atk": 108,
+  "Def": 133,
+  "Int": 98,
+  "Spd": 81
+}
+{
+  "_id": 96,
+  "Digimon": "Numemon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Earth",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1380,
+  "SP": 99,
+  "Atk": 84,
+  "Def": 138,
+  "Int": 69,
+  "Spd": 83
+}
+{
+  "_id": 97,
+  "Digimon": "Birdramon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 940,
+  "SP": 113,
+  "Atk": 94,
+  "Def": 84,
+  "Int": 109,
+  "Spd": 128
+}
+{
+  "_id": 98,
+  "Digimon": "Bakemon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 590,
+  "SP": 148,
+  "Atk": 64,
+  "Def": 74,
+  "Int": 138,
+  "Spd": 128
+}
+{
+  "_id": 99,
+  "Digimon": "Veedramon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1180,
+  "SP": 84,
+  "Atk": 138,
+  "Def": 113,
+  "Int": 64,
+  "Spd": 114
+}
+{
+  "_id": 100,
+  "Digimon": "PlatinumSukamon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Neutral",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1380,
+  "SP": 98,
+  "Atk": 79,
+  "Def": 138,
+  "Int": 79,
+  "Spd": 79
+}
+{
+  "_id": 101,
+  "Digimon": "BlackGatomon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 690,
+  "SP": 133,
+  "Atk": 84,
+  "Def": 84,
+  "Int": 133,
+  "Spd": 118
+}
+{
+  "_id": 102,
+  "Digimon": "Vegiemon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Plant",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1380,
+  "SP": 79,
+  "Atk": 113,
+  "Def": 106,
+  "Int": 87,
+  "Spd": 88
+}
+{
+  "_id": 103,
+  "Digimon": "Peckmon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 790,
+  "SP": 113,
+  "Atk": 104,
+  "Def": 84,
+  "Int": 94,
+  "Spd": 148
+}
+{
+  "_id": 104,
+  "Digimon": "Meramon",
+  "Stage": "Champion",
+  "Type": "Data",
+  "Attribute": "Fire",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1130,
+  "SP": 69,
+  "Atk": 138,
+  "Def": 113,
+  "Int": 79,
+  "Spd": 99
+}
+{
+  "_id": 105,
+  "Digimon": "Frigimon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Water",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1380,
+  "SP": 83,
+  "Atk": 103,
+  "Def": 98,
+  "Int": 99,
+  "Spd": 90
+}
+{
+  "_id": 106,
+  "Digimon": "Leomon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Earth",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 1180,
+  "SP": 69,
+  "Atk": 143,
+  "Def": 123,
+  "Int": 71,
+  "Spd": 97
+}
+{
+  "_id": 107,
+  "Digimon": "Reppamon",
+  "Stage": "Champion",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 8,
+  "Equip Slots": 1,
+  "HP": 790,
+  "SP": 118,
+  "Atk": 94,
+  "Def": 99,
+  "Int": 99,
+  "Spd": 143
+}
+{
+  "_id": 108,
+  "Digimon": "Waspmon",
+  "Stage": "Champion",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 6,
+  "Equip Slots": 2,
+  "HP": 1180,
+  "SP": 74,
+  "Atk": 133,
+  "Def": 99,
+  "Int": 74,
+  "Spd": 113
+}
+{
+  "_id": 109,
+  "Digimon": "MegaKabuterimon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Plant",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1430,
+  "SP": 115,
+  "Atk": 94,
+  "Def": 163,
+  "Int": 109,
+  "Spd": 92
+}
+{
+  "_id": 110,
+  "Digimon": "Antylamon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Neutral",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 940,
+  "SP": 123,
+  "Atk": 124,
+  "Def": 109,
+  "Int": 114,
+  "Spd": 168
+}
+{
+  "_id": 111,
+  "Digimon": "Andromon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Electric",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1040,
+  "SP": 94,
+  "Atk": 133,
+  "Def": 157,
+  "Int": 133,
+  "Spd": 95
+}
+{
+  "_id": 112,
+  "Digimon": "Meteormon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Earth",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1090,
+  "SP": 104,
+  "Atk": 123,
+  "Def": 163,
+  "Int": 128,
+  "Spd": 89
+}
+{
+  "_id": 113,
+  "Digimon": "Infermon",
+  "Stage": "Ultimate",
+  "Type": "Free",
+  "Attribute": "Dark",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1330,
+  "SP": 99,
+  "Atk": 198,
+  "Def": 89,
+  "Int": 74,
+  "Spd": 153
+}
+{
+  "_id": 114,
+  "Digimon": "Myotismon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1290,
+  "SP": 113,
+  "Atk": 148,
+  "Def": 99,
+  "Int": 148,
+  "Spd": 110
+}
+{
+  "_id": 115,
+  "Digimon": "AeroVeedramon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1430,
+  "SP": 94,
+  "Atk": 163,
+  "Def": 99,
+  "Int": 94,
+  "Spd": 153
+}
+{
+  "_id": 116,
+  "Digimon": "Etemon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1130,
+  "SP": 133,
+  "Atk": 104,
+  "Def": 119,
+  "Int": 129,
+  "Spd": 133
+}
+{
+  "_id": 117,
+  "Digimon": "Angewomon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 890,
+  "SP": 163,
+  "Atk": 69,
+  "Def": 94,
+  "Int": 188,
+  "Spd": 143
+}
+{
+  "_id": 118,
+  "Digimon": "Okuwamon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Plant",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1330,
+  "SP": 74,
+  "Atk": 158,
+  "Def": 158,
+  "Int": 74,
+  "Spd": 119
+}
+{
+  "_id": 119,
+  "Digimon": "Garudamon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1040,
+  "SP": 123,
+  "Atk": 124,
+  "Def": 109,
+  "Int": 129,
+  "Spd": 143
+}
+{
+  "_id": 120,
+  "Digimon": "Gigadramon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Wind",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1240,
+  "SP": 94,
+  "Atk": 137,
+  "Def": 148,
+  "Int": 113,
+  "Spd": 100
+}
+{
+  "_id": 121,
+  "Digimon": "CannonBeemon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 990,
+  "SP": 123,
+  "Atk": 129,
+  "Def": 139,
+  "Int": 99,
+  "Spd": 143
+}
+{
+  "_id": 122,
+  "Digimon": "GrapLeomon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Electric",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1580,
+  "SP": 89,
+  "Atk": 163,
+  "Def": 99,
+  "Int": 79,
+  "Spd": 143
+}
+{
+  "_id": 123,
+  "Digimon": "Cyberdramon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Dark",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1480,
+  "SP": 81,
+  "Atk": 173,
+  "Def": 143,
+  "Int": 79,
+  "Spd": 122
+}
+{
+  "_id": 124,
+  "Digimon": "Shakkoumon",
+  "Stage": "Ultimate",
+  "Type": "Free",
+  "Attribute": "Light",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1530,
+  "SP": 135,
+  "Atk": 84,
+  "Def": 158,
+  "Int": 139,
+  "Spd": 92
+}
+{
+  "_id": 125,
+  "Digimon": "Cherrymon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Plant",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1630,
+  "SP": 108,
+  "Atk": 113,
+  "Def": 133,
+  "Int": 114,
+  "Spd": 100
+}
+{
+  "_id": 126,
+  "Digimon": "Silphymon",
+  "Stage": "Ultimate",
+  "Type": "Free",
+  "Attribute": "Wind",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1040,
+  "SP": 138,
+  "Atk": 119,
+  "Def": 119,
+  "Int": 124,
+  "Spd": 158
+}
+{
+  "_id": 127,
+  "Digimon": "SuperStarmon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Light",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1180,
+  "SP": 128,
+  "Atk": 122,
+  "Def": 134,
+  "Int": 109,
+  "Spd": 120
+}
+{
+  "_id": 128,
+  "Digimon": "SkullGreymon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1230,
+  "SP": 79,
+  "Atk": 203,
+  "Def": 153,
+  "Int": 69,
+  "Spd": 119
+}
+{
+  "_id": 129,
+  "Digimon": "Zudomon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Water",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1630,
+  "SP": 84,
+  "Atk": 150,
+  "Def": 128,
+  "Int": 104,
+  "Spd": 102
+}
+{
+  "_id": 130,
+  "Digimon": "Taomon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Dark",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 990,
+  "SP": 148,
+  "Atk": 69,
+  "Def": 104,
+  "Int": 173,
+  "Spd": 138
+}
+{
+  "_id": 131,
+  "Digimon": "Chirinmon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 940,
+  "SP": 133,
+  "Atk": 124,
+  "Def": 119,
+  "Int": 124,
+  "Spd": 168
+}
+{
+  "_id": 132,
+  "Digimon": "Digitamamon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Neutral",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1380,
+  "SP": 89,
+  "Atk": 128,
+  "Def": 148,
+  "Int": 111,
+  "Spd": 102
+}
+{
+  "_id": 133,
+  "Digimon": "SkullMeramon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Fire",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1530,
+  "SP": 79,
+  "Atk": 183,
+  "Def": 133,
+  "Int": 70,
+  "Spd": 113
+}
+{
+  "_id": 134,
+  "Digimon": "ShogunGekomon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Water",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1980,
+  "SP": 96,
+  "Atk": 113,
+  "Def": 113,
+  "Int": 99,
+  "Spd": 97
+}
+{
+  "_id": 135,
+  "Digimon": "DoruGreymon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Fire",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1480,
+  "SP": 84,
+  "Atk": 161,
+  "Def": 153,
+  "Int": 84,
+  "Spd": 116
+}
+{
+  "_id": 136,
+  "Digimon": "Knightmon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Neutral",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1140,
+  "SP": 109,
+  "Atk": 135,
+  "Def": 158,
+  "Int": 123,
+  "Spd": 92
+}
+{
+  "_id": 137,
+  "Digimon": "Datamon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1180,
+  "SP": 133,
+  "Atk": 74,
+  "Def": 114,
+  "Int": 175,
+  "Spd": 102
+}
+{
+  "_id": 138,
+  "Digimon": "Paildramon",
+  "Stage": "Ultimate",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1280,
+  "SP": 133,
+  "Atk": 139,
+  "Def": 124,
+  "Int": 109,
+  "Spd": 128
+}
+{
+  "_id": 139,
+  "Digimon": "Panjyamon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Water",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1280,
+  "SP": 128,
+  "Atk": 124,
+  "Def": 114,
+  "Int": 111,
+  "Spd": 126
+}
+{
+  "_id": 140,
+  "Digimon": "Pumpkinmon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Earth",
+  "Memory": 10,
+  "Equip Slots": 3,
+  "HP": 1480,
+  "SP": 97,
+  "Atk": 123,
+  "Def": 108,
+  "Int": 119,
+  "Spd": 111
+}
+{
+  "_id": 141,
+  "Digimon": "Piximon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Light",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 990,
+  "SP": 123,
+  "Atk": 104,
+  "Def": 104,
+  "Int": 134,
+  "Spd": 153
+}
+{
+  "_id": 142,
+  "Digimon": "BlackKingNumemon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 10,
+  "Equip Slots": 3,
+  "HP": 1580,
+  "SP": 113,
+  "Atk": 89,
+  "Def": 168,
+  "Int": 89,
+  "Spd": 89
+}
+{
+  "_id": 143,
+  "Digimon": "BlueMeramon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1140,
+  "SP": 109,
+  "Atk": 148,
+  "Def": 94,
+  "Int": 133,
+  "Spd": 119
+}
+{
+  "_id": 144,
+  "Digimon": "Vademon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 10,
+  "Equip Slots": 3,
+  "HP": 1130,
+  "SP": 165,
+  "Atk": 64,
+  "Def": 94,
+  "Int": 173,
+  "Spd": 97
+}
+{
+  "_id": 145,
+  "Digimon": "Whamon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Water",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1680,
+  "SP": 93,
+  "Atk": 123,
+  "Def": 123,
+  "Int": 124,
+  "Spd": 100
+}
+{
+  "_id": 146,
+  "Digimon": "MagnaAngemon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1180,
+  "SP": 143,
+  "Atk": 98,
+  "Def": 119,
+  "Int": 163,
+  "Spd": 105
+}
+{
+  "_id": 147,
+  "Digimon": "MachGaogamon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Wind",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1480,
+  "SP": 89,
+  "Atk": 158,
+  "Def": 89,
+  "Int": 89,
+  "Spd": 158
+}
+{
+  "_id": 148,
+  "Digimon": "Mamemon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Earth",
+  "Memory": 10,
+  "Equip Slots": 3,
+  "HP": 1480,
+  "SP": 113,
+  "Atk": 111,
+  "Def": 153,
+  "Int": 84,
+  "Spd": 97
+}
+{
+  "_id": 149,
+  "Digimon": "MegaSeadramon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Water",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1330,
+  "SP": 138,
+  "Atk": 86,
+  "Def": 114,
+  "Int": 158,
+  "Spd": 102
+}
+{
+  "_id": 150,
+  "Digimon": "Megadramon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Wind",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1430,
+  "SP": 79,
+  "Atk": 158,
+  "Def": 148,
+  "Int": 69,
+  "Spd": 119
+}
+{
+  "_id": 151,
+  "Digimon": "WarGrowlmon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1430,
+  "SP": 84,
+  "Atk": 178,
+  "Def": 138,
+  "Int": 87,
+  "Spd": 116
+}
+{
+  "_id": 152,
+  "Digimon": "MetalGreymon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1530,
+  "SP": 84,
+  "Atk": 168,
+  "Def": 148,
+  "Int": 80,
+  "Spd": 113
+}
+{
+  "_id": 153,
+  "Digimon": "MetalGreymon (Blue)",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1670,
+  "SP": 84,
+  "Atk": 173,
+  "Def": 143,
+  "Int": 69,
+  "Spd": 110
+}
+{
+  "_id": 154,
+  "Digimon": "MetalTyrannomon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1090,
+  "SP": 104,
+  "Atk": 130,
+  "Def": 178,
+  "Int": 118,
+  "Spd": 92
+}
+{
+  "_id": 155,
+  "Digimon": "MetalMamemon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Electric",
+  "Memory": 10,
+  "Equip Slots": 3,
+  "HP": 1040,
+  "SP": 99,
+  "Atk": 123,
+  "Def": 153,
+  "Int": 128,
+  "Spd": 103
+}
+{
+  "_id": 156,
+  "Digimon": "Monzaemon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Neutral",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1580,
+  "SP": 93,
+  "Atk": 128,
+  "Def": 118,
+  "Int": 119,
+  "Spd": 100
+}
+{
+  "_id": 157,
+  "Digimon": "Crowmon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 890,
+  "SP": 128,
+  "Atk": 119,
+  "Def": 104,
+  "Int": 119,
+  "Spd": 173
+}
+{
+  "_id": 158,
+  "Digimon": "RizeGreymon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 1530,
+  "SP": 94,
+  "Atk": 178,
+  "Def": 109,
+  "Int": 69,
+  "Spd": 143
+}
+{
+  "_id": 159,
+  "Digimon": "Lilamon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1280,
+  "SP": 148,
+  "Atk": 69,
+  "Def": 104,
+  "Int": 168,
+  "Spd": 114
+}
+{
+  "_id": 160,
+  "Digimon": "Rapidmon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Electric",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1180,
+  "SP": 113,
+  "Atk": 114,
+  "Def": 109,
+  "Int": 119,
+  "Spd": 143
+}
+{
+  "_id": 161,
+  "Digimon": "Lillymon",
+  "Stage": "Ultimate",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 890,
+  "SP": 153,
+  "Atk": 74,
+  "Def": 94,
+  "Int": 163,
+  "Spd": 158
+}
+{
+  "_id": 162,
+  "Digimon": "Lucemon FM",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Neutral",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1390,
+  "SP": 139,
+  "Atk": 163,
+  "Def": 114,
+  "Int": 203,
+  "Spd": 139
+}
+{
+  "_id": 163,
+  "Digimon": "LadyDevimon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 14,
+  "Equip Slots": 1,
+  "HP": 890,
+  "SP": 163,
+  "Atk": 99,
+  "Def": 94,
+  "Int": 158,
+  "Spd": 143
+}
+{
+  "_id": 164,
+  "Digimon": "WereGarurumon",
+  "Stage": "Ultimate",
+  "Type": "Vaccine",
+  "Attribute": "Earth",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1430,
+  "SP": 89,
+  "Atk": 178,
+  "Def": 89,
+  "Int": 79,
+  "Spd": 153
+}
+{
+  "_id": 165,
+  "Digimon": "WereGarurumon (Blk)",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Earth",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 1480,
+  "SP": 79,
+  "Atk": 183,
+  "Def": 104,
+  "Int": 69,
+  "Spd": 148
+}
+{
+  "_id": 166,
+  "Digimon": "Wisemon",
+  "Stage": "Ultimate",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 12,
+  "Equip Slots": 2,
+  "HP": 790,
+  "SP": 168,
+  "Atk": 69,
+  "Def": 84,
+  "Int": 198,
+  "Spd": 133
+}
+{
+  "_id": 167,
+  "Digimon": "Alphamon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Neutral",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1390,
+  "SP": 128,
+  "Atk": 158,
+  "Def": 183,
+  "Int": 158,
+  "Spd": 130
+}
+{
+  "_id": 168,
+  "Digimon": "UlforceVeedramon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1680,
+  "SP": 129,
+  "Atk": 188,
+  "Def": 109,
+  "Int": 104,
+  "Spd": 198
+}
+{
+  "_id": 169,
+  "Digimon": "Ebemon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 16,
+  "Equip Slots": 3,
+  "HP": 1230,
+  "SP": 178,
+  "Atk": 74,
+  "Def": 114,
+  "Int": 198,
+  "Spd": 129
+}
+{
+  "_id": 170,
+  "Digimon": "Imperialdramon DM",
+  "Stage": "Mega",
+  "Type": "Free",
+  "Attribute": "Fire",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1730,
+  "SP": 143,
+  "Atk": 139,
+  "Def": 139,
+  "Int": 139,
+  "Spd": 148
+}
+{
+  "_id": 171,
+  "Digimon": "Imperialdramon FM",
+  "Stage": "Mega",
+  "Type": "Free",
+  "Attribute": "Neutral",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1780,
+  "SP": 114,
+  "Atk": 198,
+  "Def": 124,
+  "Int": 114,
+  "Spd": 153
+}
+{
+  "_id": 172,
+  "Digimon": "Vikemon",
+  "Stage": "Mega",
+  "Type": "Free",
+  "Attribute": "Water",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1780,
+  "SP": 105,
+  "Atk": 158,
+  "Def": 143,
+  "Int": 129,
+  "Spd": 133
+}
+{
+  "_id": 173,
+  "Digimon": "VenomMyotismon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1540,
+  "SP": 120,
+  "Atk": 193,
+  "Def": 104,
+  "Int": 148,
+  "Spd": 138
+}
+{
+  "_id": 174,
+  "Digimon": "WarGreymon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1630,
+  "SP": 98,
+  "Atk": 193,
+  "Def": 163,
+  "Int": 99,
+  "Spd": 140
+}
+{
+  "_id": 175,
+  "Digimon": "Examon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Wind",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1630,
+  "SP": 148,
+  "Atk": 174,
+  "Def": 129,
+  "Int": 129,
+  "Spd": 153
+}
+{
+  "_id": 176,
+  "Digimon": "Ophanimon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 840,
+  "SP": 183,
+  "Atk": 104,
+  "Def": 164,
+  "Int": 193,
+  "Spd": 153
+}
+{
+  "_id": 177,
+  "Digimon": "Gaiomon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1630,
+  "SP": 99,
+  "Atk": 203,
+  "Def": 129,
+  "Int": 94,
+  "Spd": 158
+}
+{
+  "_id": 178,
+  "Digimon": "ChaosGallantmon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1340,
+  "SP": 139,
+  "Atk": 178,
+  "Def": 139,
+  "Int": 163,
+  "Spd": 144
+}
+{
+  "_id": 179,
+  "Digimon": "Gankoomon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Fire",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 2080,
+  "SP": 90,
+  "Atk": 188,
+  "Def": 163,
+  "Int": 109,
+  "Spd": 138
+}
+{
+  "_id": 180,
+  "Digimon": "Kuzuhamon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Dark",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1380,
+  "SP": 163,
+  "Atk": 84,
+  "Def": 129,
+  "Int": 193,
+  "Spd": 139
+}
+{
+  "_id": 181,
+  "Digimon": "GranKuwagamon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Plant",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1530,
+  "SP": 88,
+  "Atk": 178,
+  "Def": 178,
+  "Int": 89,
+  "Spd": 140
+}
+{
+  "_id": 182,
+  "Digimon": "GroundLocomon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Electric",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1140,
+  "SP": 114,
+  "Atk": 144,
+  "Def": 213,
+  "Int": 133,
+  "Spd": 128
+}
+{
+  "_id": 183,
+  "Digimon": "Craniamon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Earth",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1630,
+  "SP": 143,
+  "Atk": 124,
+  "Def": 208,
+  "Int": 134,
+  "Spd": 124
+}
+{
+  "_id": 184,
+  "Digimon": "Kerpymon (Good)",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 20,
+  "Equip Slots": 1,
+  "HP": 1290,
+  "SP": 188,
+  "Atk": 94,
+  "Def": 104,
+  "Int": 208,
+  "Spd": 158
+}
+{
+  "_id": 185,
+  "Digimon": "SaberLeomon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Wind",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1680,
+  "SP": 99,
+  "Atk": 228,
+  "Def": 104,
+  "Int": 84,
+  "Spd": 163
+}
+{
+  "_id": 186,
+  "Digimon": "Sakuyamon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Light",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 990,
+  "SP": 178,
+  "Atk": 94,
+  "Def": 114,
+  "Int": 188,
+  "Spd": 173
+}
+{
+  "_id": 187,
+  "Digimon": "Jesmon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Neutral",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1480,
+  "SP": 119,
+  "Atk": 198,
+  "Def": 149,
+  "Int": 114,
+  "Spd": 168
+}
+{
+  "_id": 188,
+  "Digimon": "ShineGreymon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1880,
+  "SP": 114,
+  "Atk": 203,
+  "Def": 109,
+  "Int": 84,
+  "Spd": 158
+}
+{
+  "_id": 189,
+  "Digimon": "Justimon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1530,
+  "SP": 99,
+  "Atk": 193,
+  "Def": 158,
+  "Int": 99,
+  "Spd": 144
+}
+{
+  "_id": 190,
+  "Digimon": "Kentaurosmon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1140,
+  "SP": 153,
+  "Atk": 139,
+  "Def": 154,
+  "Int": 154,
+  "Spd": 183
+}
+{
+  "_id": 191,
+  "Digimon": "Seraphimon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1480,
+  "SP": 162,
+  "Atk": 94,
+  "Def": 144,
+  "Int": 198,
+  "Spd": 135
+}
+{
+  "_id": 192,
+  "Digimon": "MegaGargomon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Electric",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1430,
+  "SP": 132,
+  "Atk": 149,
+  "Def": 139,
+  "Int": 119,
+  "Spd": 144
+}
+{
+  "_id": 193,
+  "Digimon": "TigerVespamon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1630,
+  "SP": 104,
+  "Atk": 193,
+  "Def": 114,
+  "Int": 99,
+  "Spd": 173
+}
+{
+  "_id": 194,
+  "Digimon": "Titamon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Earth",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1930,
+  "SP": 99,
+  "Atk": 183,
+  "Def": 128,
+  "Int": 114,
+  "Spd": 129
+}
+{
+  "_id": 195,
+  "Digimon": "Dianamon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Water",
+  "Memory": 20,
+  "Equip Slots": 1,
+  "HP": 790,
+  "SP": 178,
+  "Atk": 89,
+  "Def": 154,
+  "Int": 198,
+  "Spd": 183
+}
+{
+  "_id": 196,
+  "Digimon": "Diaboromon",
+  "Stage": "Mega",
+  "Type": "Free",
+  "Attribute": "Dark",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1680,
+  "SP": 114,
+  "Atk": 243,
+  "Def": 104,
+  "Int": 79,
+  "Spd": 173
+}
+{
+  "_id": 197,
+  "Digimon": "Creepymon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1440,
+  "SP": 133,
+  "Atk": 183,
+  "Def": 114,
+  "Int": 183,
+  "Spd": 140
+}
+{
+  "_id": 198,
+  "Digimon": "Gallantmon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Light",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1480,
+  "SP": 148,
+  "Atk": 149,
+  "Def": 154,
+  "Int": 149,
+  "Spd": 148
+}
+{
+  "_id": 199,
+  "Digimon": "Dynasmon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Wind",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1680,
+  "SP": 114,
+  "Atk": 213,
+  "Def": 129,
+  "Int": 94,
+  "Spd": 178
+}
+{
+  "_id": 200,
+  "Digimon": "Leopardmon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Light",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 990,
+  "SP": 188,
+  "Atk": 124,
+  "Def": 114,
+  "Int": 183,
+  "Spd": 188
+}
+{
+  "_id": 201,
+  "Digimon": "Leopardmon LM",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Earth",
+  "Memory": 25,
+  "Equip Slots": 1,
+  "HP": 1290,
+  "SP": 153,
+  "Atk": 159,
+  "Def": 129,
+  "Int": 139,
+  "Spd": 218
+}
+{
+  "_id": 202,
+  "Digimon": "HiAndromon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Electric",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1190,
+  "SP": 114,
+  "Atk": 153,
+  "Def": 178,
+  "Int": 138,
+  "Spd": 124
+}
+{
+  "_id": 203,
+  "Digimon": "Barbamon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1330,
+  "SP": 184,
+  "Atk": 84,
+  "Def": 129,
+  "Int": 233,
+  "Spd": 133
+}
+{
+  "_id": 204,
+  "Digimon": "BanchoLeomon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Earth",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1630,
+  "SP": 84,
+  "Atk": 193,
+  "Def": 188,
+  "Int": 80,
+  "Spd": 138
+}
+{
+  "_id": 205,
+  "Digimon": "Piedmon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 890,
+  "SP": 178,
+  "Atk": 129,
+  "Def": 104,
+  "Int": 183,
+  "Spd": 163
+}
+{
+  "_id": 206,
+  "Digimon": "Puppetmon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Plant",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1140,
+  "SP": 114,
+  "Atk": 163,
+  "Def": 163,
+  "Int": 148,
+  "Spd": 124
+}
+{
+  "_id": 207,
+  "Digimon": "PlatinumNumemon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Neutral",
+  "Memory": 16,
+  "Equip Slots": 3,
+  "HP": 1830,
+  "SP": 132,
+  "Atk": 94,
+  "Def": 178,
+  "Int": 109,
+  "Spd": 120
+}
+{
+  "_id": 208,
+  "Digimon": "BlackWarGreymon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Fire",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1730,
+  "SP": 93,
+  "Atk": 183,
+  "Def": 178,
+  "Int": 89,
+  "Spd": 140
+}
+{
+  "_id": 209,
+  "Digimon": "PrinceMamemon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Neutral",
+  "Memory": 16,
+  "Equip Slots": 3,
+  "HP": 1630,
+  "SP": 137,
+  "Atk": 104,
+  "Def": 173,
+  "Int": 109,
+  "Spd": 130
+}
+{
+  "_id": 210,
+  "Digimon": "Plesiomon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Water",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1680,
+  "SP": 153,
+  "Atk": 74,
+  "Def": 114,
+  "Int": 188,
+  "Spd": 129
+}
+{
+  "_id": 211,
+  "Digimon": "HerculesKabuterimon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Plant",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1680,
+  "SP": 128,
+  "Atk": 114,
+  "Def": 168,
+  "Int": 124,
+  "Spd": 124
+}
+{
+  "_id": 212,
+  "Digimon": "Beelzemon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1680,
+  "SP": 114,
+  "Atk": 228,
+  "Def": 119,
+  "Int": 99,
+  "Spd": 168
+}
+{
+  "_id": 213,
+  "Digimon": "Belphemon SM",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1730,
+  "SP": 178,
+  "Atk": 89,
+  "Def": 114,
+  "Int": 203,
+  "Spd": 139
+}
+{
+  "_id": 214,
+  "Digimon": "Hououmon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1390,
+  "SP": 173,
+  "Atk": 84,
+  "Def": 99,
+  "Int": 193,
+  "Spd": 158
+}
+{
+  "_id": 215,
+  "Digimon": "Magnadramon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1880,
+  "SP": 168,
+  "Atk": 89,
+  "Def": 124,
+  "Int": 183,
+  "Spd": 129
+}
+{
+  "_id": 216,
+  "Digimon": "Boltmon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Electric",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1580,
+  "SP": 83,
+  "Atk": 198,
+  "Def": 163,
+  "Int": 84,
+  "Spd": 140
+}
+{
+  "_id": 217,
+  "Digimon": "Mastemon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Neutral",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1340,
+  "SP": 144,
+  "Atk": 173,
+  "Def": 134,
+  "Int": 173,
+  "Spd": 149
+}
+{
+  "_id": 218,
+  "Digimon": "MarineAngemon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Water",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1190,
+  "SP": 198,
+  "Atk": 64,
+  "Def": 89,
+  "Int": 203,
+  "Spd": 153
+}
+{
+  "_id": 219,
+  "Digimon": "Minervamon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Neutral",
+  "Memory": 20,
+  "Equip Slots": 1,
+  "HP": 1580,
+  "SP": 114,
+  "Atk": 208,
+  "Def": 114,
+  "Int": 119,
+  "Spd": 168
+}
+{
+  "_id": 220,
+  "Digimon": "MirageGaogamon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Wind",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1480,
+  "SP": 114,
+  "Atk": 183,
+  "Def": 114,
+  "Int": 109,
+  "Spd": 178
+}
+{
+  "_id": 221,
+  "Digimon": "Machinedramon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1240,
+  "SP": 114,
+  "Atk": 173,
+  "Def": 183,
+  "Int": 128,
+  "Spd": 124
+}
+{
+  "_id": 222,
+  "Digimon": "MetalEtemon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Earth",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1630,
+  "SP": 128,
+  "Atk": 134,
+  "Def": 188,
+  "Int": 89,
+  "Spd": 124
+}
+{
+  "_id": 223,
+  "Digimon": "MetalGarurumon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Water",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1140,
+  "SP": 143,
+  "Atk": 154,
+  "Def": 129,
+  "Int": 129,
+  "Spd": 178
+}
+{
+  "_id": 224,
+  "Digimon": "MetalGarurumon (Blk)",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1190,
+  "SP": 128,
+  "Atk": 163,
+  "Def": 173,
+  "Int": 133,
+  "Spd": 130
+}
+{
+  "_id": 225,
+  "Digimon": "MetalSeadramon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Water",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1430,
+  "SP": 148,
+  "Atk": 99,
+  "Def": 139,
+  "Int": 168,
+  "Spd": 129
+}
+{
+  "_id": 226,
+  "Digimon": "RustTyranomon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1680,
+  "SP": 83,
+  "Atk": 218,
+  "Def": 163,
+  "Int": 74,
+  "Spd": 140
+}
+{
+  "_id": 227,
+  "Digimon": "Leviamon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Water",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1730,
+  "SP": 120,
+  "Atk": 168,
+  "Def": 158,
+  "Int": 144,
+  "Spd": 133
+}
+{
+  "_id": 228,
+  "Digimon": "Lilithmon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 940,
+  "SP": 203,
+  "Atk": 99,
+  "Def": 104,
+  "Int": 223,
+  "Spd": 173
+}
+{
+  "_id": 229,
+  "Digimon": "Ravemon",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1040,
+  "SP": 143,
+  "Atk": 139,
+  "Def": 119,
+  "Int": 139,
+  "Spd": 203
+}
+{
+  "_id": 230,
+  "Digimon": "Crusadermon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 22,
+  "Equip Slots": 1,
+  "HP": 1240,
+  "SP": 153,
+  "Atk": 144,
+  "Def": 139,
+  "Int": 144,
+  "Spd": 193
+}
+{
+  "_id": 231,
+  "Digimon": "Rosemon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1330,
+  "SP": 147,
+  "Atk": 144,
+  "Def": 129,
+  "Int": 149,
+  "Spd": 144
+}
+{
+  "_id": 232,
+  "Digimon": "Lotosmon",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 940,
+  "SP": 188,
+  "Atk": 74,
+  "Def": 109,
+  "Int": 213,
+  "Spd": 168
+}
+{
+  "_id": 233,
+  "Digimon": "Imperialdramon PM",
+  "Stage": "Ultra",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 25,
+  "Equip Slots": 1,
+  "HP": 1530,
+  "SP": 158,
+  "Atk": 154,
+  "Def": 154,
+  "Int": 154,
+  "Spd": 153
+}
+{
+  "_id": 234,
+  "Digimon": "Omnimon",
+  "Stage": "Ultra",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 25,
+  "Equip Slots": 1,
+  "HP": 1680,
+  "SP": 104,
+  "Atk": 208,
+  "Def": 168,
+  "Int": 134,
+  "Spd": 144
+}
+{
+  "_id": 235,
+  "Digimon": "Omnimon Zwart",
+  "Stage": "Ultra",
+  "Type": "Vaccine",
+  "Attribute": "Dark",
+  "Memory": 25,
+  "Equip Slots": 1,
+  "HP": 1490,
+  "SP": 139,
+  "Atk": 153,
+  "Def": 193,
+  "Int": 158,
+  "Spd": 134
+}
+{
+  "_id": 236,
+  "Digimon": "Belphemon RM",
+  "Stage": "Ultra",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 25,
+  "Equip Slots": 0,
+  "HP": 1780,
+  "SP": 84,
+  "Atk": 247,
+  "Def": 168,
+  "Int": 109,
+  "Spd": 140
+}
+{
+  "_id": 237,
+  "Digimon": "Lucemon SM",
+  "Stage": "Ultra",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 25,
+  "Equip Slots": 0,
+  "HP": 1490,
+  "SP": 173,
+  "Atk": 89,
+  "Def": 124,
+  "Int": 233,
+  "Spd": 158
+}
+{
+  "_id": 238,
+  "Digimon": "Flamedramon",
+  "Stage": "Armor",
+  "Type": "Free",
+  "Attribute": "Fire",
+  "Memory": 8,
+  "Equip Slots": 3,
+  "HP": 1130,
+  "SP": 93,
+  "Atk": 119,
+  "Def": 99,
+  "Int": 89,
+  "Spd": 138
+}
+{
+  "_id": 239,
+  "Digimon": "Magnamon",
+  "Stage": "Armor",
+  "Type": "Free",
+  "Attribute": "Earth",
+  "Memory": 22,
+  "Equip Slots": 2,
+  "HP": 1240,
+  "SP": 124,
+  "Atk": 168,
+  "Def": 208,
+  "Int": 148,
+  "Spd": 124
+}
+{
+  "_id": 240,
+  "Digimon": "Rapidmon (Armor)",
+  "Stage": "Armor",
+  "Type": "Vaccine",
+  "Attribute": "Light",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1140,
+  "SP": 114,
+  "Atk": 158,
+  "Def": 178,
+  "Int": 158,
+  "Spd": 124
+}
+{
+  "_id": 241,
+  "Digimon": "Kerpymon (Blk)",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 20,
+  "Equip Slots": 1,
+  "HP": 1290,
+  "SP": 188,
+  "Atk": 94,
+  "Def": 94,
+  "Int": 223,
+  "Spd": 153
+}
+{
+  "_id": 242,
+  "Digimon": "Beelzemon BM",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Dark",
+  "Memory": 25,
+  "Equip Slots": 1,
+  "HP": 1680,
+  "SP": 114,
+  "Atk": 238,
+  "Def": 124,
+  "Int": 104,
+  "Spd": 178
+}
+{
+  "_id": 243,
+  "Digimon": "Darkdramon",
+  "Stage": "Mega",
+  "Type": "Virus",
+  "Attribute": "Electric",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1580,
+  "SP": 94,
+  "Atk": 188,
+  "Def": 148,
+  "Int": 99,
+  "Spd": 139
+}
+{
+  "_id": 244,
+  "Digimon": "Chaosmon",
+  "Stage": "Ultra",
+  "Type": "Vaccine",
+  "Attribute": "Neutral",
+  "Memory": 25,
+  "Equip Slots": 2,
+  "HP": 1080,
+  "SP": 129,
+  "Atk": 318,
+  "Def": 94,
+  "Int": 89,
+  "Spd": 188
+}
+{
+  "_id": 245,
+  "Digimon": "Valkyrimon",
+  "Stage": "Mega",
+  "Type": "Free",
+  "Attribute": "Wind",
+  "Memory": 18,
+  "Equip Slots": 3,
+  "HP": 1330,
+  "SP": 139,
+  "Atk": 148,
+  "Def": 129,
+  "Int": 129,
+  "Spd": 168
+}
+{
+  "_id": 246,
+  "Digimon": "ShineGreymon BM",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Fire",
+  "Memory": 22,
+  "Equip Slots": 2,
+  "HP": 1980,
+  "SP": 114,
+  "Atk": 228,
+  "Def": 104,
+  "Int": 84,
+  "Spd": 168
+}
+{
+  "_id": 247,
+  "Digimon": "MirageGaogamon BM",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Light",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1440,
+  "SP": 124,
+  "Atk": 178,
+  "Def": 104,
+  "Int": 158,
+  "Spd": 174
+}
+{
+  "_id": 248,
+  "Digimon": "Ravemon BM",
+  "Stage": "Mega",
+  "Type": "Vaccine",
+  "Attribute": "Wind",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1040,
+  "SP": 133,
+  "Atk": 149,
+  "Def": 139,
+  "Int": 144,
+  "Spd": 213
+}
+{
+  "_id": 249,
+  "Digimon": "Rosemon BM",
+  "Stage": "Mega",
+  "Type": "Data",
+  "Attribute": "Plant",
+  "Memory": 20,
+  "Equip Slots": 2,
+  "HP": 1480,
+  "SP": 143,
+  "Atk": 149,
+  "Def": 139,
+  "Int": 159,
+  "Spd": 143
+}
