@@ -3,7 +3,7 @@
 ## __O que vamos aprender?__
 - O que é o aggregation framework?
 - O que é um estágio de uma pipeline?
-- Como montar uma aggregation pipeline para fazer consultas mais robustas ao banco
+- Como montar uma aggregation pipeline para fazer consultas mais robustas ao banco.
 
 
 ## __Você será capaz de:__
@@ -15,9 +15,9 @@ Montar uma pipeline usando estes operadores sozinhos ou em conjunto :
 - $group 
 
 ## __Porque isso é importante?__
-Aggregation é um framework (estrutura) para visualização e manipulação de dados, usando um ou multiplos **estágios** em sequência, ou seja monta a famosa `pipeline`.
+Aggregation é um framework (estrutura) para visualização e manipulação de dados, usando um ou múltiplos **estágios** em sequência, ou seja, monta a famosa `pipeline`.
 
-Imagine que você precisa montar consultas que precisam, filtar documentos, inserir novos  campos, agrupar documentos por um campo e realizar operações encima desses resultados, tudo em uma tacada só. 
+Imagine que você precisa montar consultas que precisam filtrar documentos, inserir novos  campos, agrupar documentos por um campo e realizar operações encima desses resultados. Tudo em uma tacada só. 
 
 Usando o Aggregations você tem ferramentas para criar buscas mais complexas no seu banco. Além disso, você consegue manipular os resultados de cada **estágio**.
 
@@ -25,11 +25,11 @@ Usando os operadores é possível filtrar documentos por comparação, projetar 
 
 ## __Conteúdos__
 
-Cada estágio, opera sobre o documento recebido e passa o resultado para o próximo. Existem muitos operadores de agregação e a mágica está em combina-los, mas vamos conhecer um de cada vez.
+Cada estágio opera sobre o documento recebido e passa o resultado para o próximo. Existem muitos operadores de agregação e a mágica está em combiná-los, mas vamos conhecer um de cada vez.
 
 Quando chegar a hora de combinar você sempre pode consultar os exemplos e a documentação, [link](https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/#db-collection-aggregate-stages).
 
-Um estágio em mongodb é definido como um objeto dentro da função aggregate, você pode defini-los como um array de objetos, sendo único parâmetro da função ou como um objeto como cada parâmetro da função. Como no exemplo abaixo:
+Um estágio em mongodb é definido como um objeto dentro da função aggregate, você pode definí-los como um *array* de objetos, sendo único parâmetro da função ou como um objeto como cada parâmetro da função. Como no exemplo abaixo:
 
 ```jsx
 db.digimons.aggregate([
@@ -64,14 +64,14 @@ db.digimons.aggregate([
 { "_id" : 46, "name" : "Veemon", "hp" : 1040, "memoria" : 5 }
 ```
 
-Antes de fazer os exercícios de fixação, salve o [link](https://raw.githubusercontent.com/nato-re/digimongodb/master/digimon.json), clicando encima dele com o botão direito. Depois execute o comando a seguir substituindo `/caminho-para-pasta/que-salvou` pelo caminho da pasta que você salvou o banco.
+Antes de fazer os exercícios de fixação, salve o [link](https://raw.githubusercontent.com/nato-re/digimongodb/master/digimon.json), clicando encima dele com o botão direito. Depois execute o comando a seguir substituindo `/caminho-para-pasta/que-salvou` pelo caminho da pasta que você salvou o banco de dados.
 ```shell
 mongoimport --db digimongo --collection digimons --file /caminho-para-pasta/que-salvou 
 ```
 
-É **importante** ressaltar que, a ordem dos estágios na maioria das vezes **faz diferença**. O primeiro estágio da pipeline, sempre recebe todos os documentos da coleção e estágios posteriores: recebem os documentos manipulados pelos estágios anteriores.
+É **importante** ressaltar que, a ordem dos estágios na maioria das vezes **faz diferença**. O primeiro estágio da _pipeline_, sempre recebe todos os documentos da coleção e estágios posteriores: recebem os documentos manipulados pelos estágios anteriores.
 
-Vamos começar pelo `$match` e pelo `$project`. Por mais novo que parece, você já teve o contato com as mecânicas deles no conteúdo de `find`.
+Vamos começar pelo `$match` e pelo `$project`. Por mais novo que pareça, você já teve o contato com as mecânicas deles no conteúdo de `find`.
 
 ### `$match`: filtra o numero de documentos por uma restrição e passa o retorno para o próximo estágio.
 
@@ -97,13 +97,13 @@ db.example.aggregate([
 ```
 O campo `"poder"` do exemplo é o definido para fazer a seleção de documentos que o valor de `"poder"` é maior que 8000.
 
-Outros operadores [lógicos](https://docs.mongodb.com/manual/reference/operator/query-logical/) ou de [comparação](https://docs.mongodb.com/manual/reference/operator/query-comparison/) podem ser usandos no $match e entre outros operadores do aggregate.
+Outros operadores [lógicos](https://docs.mongodb.com/manual/reference/operator/query-logical/) ou de [comparação](https://docs.mongodb.com/manual/reference/operator/query-comparison/) podem ser usados no `$match` e entre outros operadores do aggregate.
 
 Usando eles para encontrar documentos, que entram nas restrições que você deseja aplicar na busca, como `$gt`, `$lte`, `$in` ... 
 
 ### Restrições
 
-A sintaxe é identica ao [primeiro parâmentro do find](https://docs.mongodb.com/manual/tutorial/query-documents/#read-operations-qudifery-argument), __porém__, o `$match` não aceita expresões de agregação brutas ([referência](https://docs.mongodb.com/manual/reference/operator/aggregation/match/index.html#restrictions)). Operadores como `$or`, `$eq`, `$and` não podem ser usados como operadores de alto nível, ou seja, usados como chave logo dentro do `$match`. Como solução, o operador `$expr` é usado para envelopar esses outros, veja o exemplo abaixo para entender melhor:
+A sintaxe é idêntica ao [primeiro parâmetro do find](https://docs.mongodb.com/manual/tutorial/query-documents/#read-operations-qudifery-argument), __porém__, o `$match` não aceita expressões de agregação brutas ([referência](https://docs.mongodb.com/manual/reference/operator/aggregation/match/index.html#restrictions)). Operadores como `$or`, `$eq`, `$and` não podem ser usados como operadores de alto nível, ou seja, usados como chave logo dentro do `$match`. Como solução, o operador `$expr` é usado para envelopar esses outros. Veja o exemplo abaixo para entender melhor:
 
 
 ```jsx
@@ -158,7 +158,7 @@ db.digimons.aggregate([
 
 ```
 
-Use o próximo link para rever os operadores dos conteúdos passados para combina-los nos seus estágios, acessando [aqui](https://docs.mongodb.com/manual/reference/operator/query/).
+Use o próximo link para rever os operadores dos conteúdos passados para combiná-los nos seus estágios, acessando [aqui](https://docs.mongodb.com/manual/reference/operator/query/).
  
 
 ### `$project`: passa documentos com campos específicos ou computa novos campos para o próximo estágio.
@@ -182,7 +182,7 @@ db.example.aggregate([
 	{
 		$project:{
 			"nome": 1, // $nome será projetado para próximo estágio 
-			"_id": "$cpf", // _id vai virará o $cpf depois do estágio
+			"_id": "$cpf", // _id virará o $cpf depois do estágio
 			"novo_id": "$_id", // campo novo_id projetado como $_id 
 			"idade": 0  // a idade é projetada pois o valor do campo é falsy
 		}
@@ -206,9 +206,9 @@ db.example.aggregate([
 
 [Link](https://docs.mongodb.com/manual/reference/operator/aggregation/sort/index.html) da documentação.
 
-O operador define um campo e ordena os documentos de entrada **usando o campo definido com citério de ordenação**:
+O operador define um campo e ordena os documentos de entrada **usando o campo definido com critério de ordenação**:
 
-Usando `1` como valor desse campo, os documentos são retornados em ordem crescente, do com o menor valor primeiro e maior por último. 
+Usando `1` como valor desse campo, os documentos são retornados em ordem crescente, com o menor valor primeiro e maior por último. 
 
 E com `-1`, se ordena do maior valor para o menor, ou seja, em ordem decrescente.
 
@@ -221,6 +221,7 @@ O `$sort` também funciona em strings, veja os exemplos:
  	}
  ])
 ```
+// confuso
 Ordena os documentos na ordem alfabética, ou seja, os que o valor do campo "name", que começam com 'a' virão antes dos com 'z'.
 
 ```jsx
