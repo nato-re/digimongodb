@@ -356,21 +356,21 @@ db.digimons.aggregate([
 
 ## Exercícios
 
-1. Blue Monday: encontre todos os digimons do attribute Water.
+1. Blue Monday: encontre todos os digimons do `attribute` Water.
 
-2. Misirlou: altere a query de forma que os documentos também tenham o campo memory maior ou igual a 80.
+2. Misirlou: altere a query anterior de forma que os documentos também sejam restritos ao campo `memory` maior ou igual a 80.
 
-3. Pipeline: adicione a query anterior um novo estágio, de maneira que só os campor stage, name, memory e attribute seja retornados.
+3. Pipeline: adicione a query anterior um novo estágio, de maneira que só os campos `stage`, `name`, `memory` e `attribute` seja retornados.
 
-4. Earth, Wind and Fire: selecione documentos com attribute Earth, Fire ou Wind digimons, projete apenas name e attribute.
+4. Earth, Wind and Fire: selecione documentos com `attribute` Earth, Fire ou Wind digimons, projete apenas `name` e `attribute`.
 
-5. Nitro: retorne apenas o digimon com o maior valor no campo "spd".
+5. Nitro: retorne apenas o digimon com o maior valor no campo `spd`.
 
-6. O Mago é Implacável: ache qual digimon tem o maior valor do campo "int", renomeie o campo "int" por poderMagico, "sp" por mana e adicione o campo "mago" com valor Patolino.
+6. O Mago é Implacável: ache qual digimon tem o maior valor do campo `int`, renomeie o campo `int` por poderMagico, `sp` por mana e adicione o campo "mago" com valor Patolino.
 
-7. Push it to the limit: selecione 7 digimons com maiores valores de "memory" e coloque seus nomes num array no campo names.
+7. Push It To The Limit: selecione 7 digimons com maiores valores de `memory` e coloque seus nomes num array num campo chamado names.
 
-8. Changes: Encontre a média dos campos hp, sp, atk, def, int, spd; arrendonde os calores para números inteiros e nomeie os campos de sáida como mediaHp, mediaSp, mediaAtk, mediaDef, mediaInt e mediaSpd.
+8. Changes: Agrupe por `stage` e encontre a média dos campos `hp`, `sp`, `atk`, `def`, `int`, `spd`; arrendonde os calores para números inteiros e nomeie os campos de saída como mediaHp, mediaSp, mediaAtk, mediaDef, mediaInt e mediaSpd.
 
 ## Recursos Adicionais
 
