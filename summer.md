@@ -65,11 +65,14 @@ db.digimons.aggregate([
 ```
 
 Para fazer os exercícios padrões ou de fixação, salve o [link](https://raw.githubusercontent.com/nato-re/digimongodb/master/digimon.json), clicando em cima dele com o botão direito. Depois execute o comando a seguir substituindo `/caminho-para-pasta/que-salvou` pelo caminho da pasta que você salvou o banco de dados.
+
 ```shell
 # importando pelo terminal
 mongoimport --db digimongo --collection digimons --file /caminho-para-pasta/que-salvou
 ```
+
 Execute sua instância do `mongo`, use o `db` digimongo e teste o tamanho da colecão.
+
 ```js
 use digimongo
 db.digimons.count() // 249
@@ -99,7 +102,7 @@ db.example.aggregate([
 			"saga": "Saga dos Saiyajins" // além de poder maior 8000, só documentos com o campo "saga" igual a "Saga dos Saiyajins" serão selecionados 
 		}
 	}
-])
+]);
 ```
 O campo `"poder"` do exemplo é o definido para fazer a seleção de documentos que o valor de `"poder"` é maior que 8000.
 
@@ -110,7 +113,6 @@ Você pode usá-los para encontrar documentos que entram nas restrições que de
 ### Restrições
 
 A sintaxe é idêntica ao [primeiro parâmetro do find](https://docs.mongodb.com/manual/tutorial/query-documents/#read-operations-qudifery-argument), **porém**, o `$match` não aceita expressões de agregação brutas ([referência](https://docs.mongodb.com/manual/reference/operator/aggregation/match/index.html#restrictions)). Operadores como `$or`, `$eq`, `$and` não podem ser usados como operadores de alto nível, ou seja, usados como chave logo dentro do `$match`. Como solução, o operador `$expr` é usado para envelopar esses outros. Veja o exemplo abaixo para entender melhor:
-
 
 ```js
 db.digimons.aggregate([
@@ -126,7 +128,7 @@ db.digimons.aggregate([
         },
       },
     },
-]).pretty()
+]);
 ```
 
 ```js
@@ -198,7 +200,7 @@ db.example.aggregate([
 			"idade": 0  // a idade é projetada pois o valor do campo é falsy
 		}
 	}
-])
+]);
 ```
 ```js
 // Retorno 
@@ -209,7 +211,6 @@ db.example.aggregate([
 }
 ```
 #### Incluindo cálculos no `$project`
-
 
 Usaremos o operador [`$sum`](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/#definition) para demonstrar essa funcionalidade, que pode ser usado em outros estágios como no `$group` que veremos mais tarde. Veja o exemplo abaixo que projeta a soma dos campos `sp`, `atk`, `def`, `int`, `spd`. 
 
@@ -222,7 +223,7 @@ db.digimons.aggregate([
 			}
 		}
 	}
-])
+]);
 ```
 
 ### Fixação 
@@ -252,22 +253,22 @@ Já com `-1`, se ordena do maior valor para o menor, ou seja, em ordem decrescen
 O `$sort` também funciona em strings, veja os exemplos:
 
 ```js
- db.users.aggregate([
+db.users.aggregate([
 	{
 	 $sort: { "name": 1 } // ordena os documentos pelo nome em ordem alfabética crescente, do A ao Z
  	}
- ])
+]);
 ```
 
 ```js
- db.example.aggregate([
+db.example.aggregate([
 	{
 	 $sort: { 
 		 	"preco": -1, // documentos retornados em ordem decrescente em relação ao valor de "preco"
 			"nome": 1 // e também ordenados de maneira alfabética
 		  	}
  	}
- ])
+]);
 ```
 
 
@@ -284,7 +285,7 @@ Vamos ver um exemplo: suponha que você quer que apenas 3 documentos sejam retor
 ```js
 db.example.aggregate([
 	{ $limit: 3 }
-])
+]);
 ```
 #### Fixação
 
@@ -408,4 +409,17 @@ Usando o banco digimongo importado no início do conteúdo e usado nos exercíci
 
 [Conteúdo em português sobre $match, $project e $group](https://alissonmachado.com.br/mongodb-aggregation/)
 
+[Agregando Datas](http://www.basef.com.br/index.php/Query_de_MongoDB_agregando_por_m%C3%AAs_e_ano)
+
+[Aggregations in MongoDB by Example](https://www.compose.com/articles/aggregations-in-mongodb-by-example/)
+
 [Mongodb Aggregation Framework Part 1](https://medium.com/@kallupragathi/mongodb-aggregation-framework-part-1-2f1c0db05bd6)
+
+[Aggregation Pipeline Stages](https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/#aggregation-pipeline-stages)
+[Aggregation Pipeline Operators](https://docs.mongodb.com/manual/reference/operator/aggregation/#aggregation-pipeline-operators)
+
+
+// Disclaimer
+
+Fonte da coleção de digimon: 
+[Digimon Database](https://www.kaggle.com/rtatman/digidb?select=DigiDB_supportlist.csv) 
