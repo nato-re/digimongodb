@@ -3,11 +3,11 @@
 ## __O que vamos aprender?__
 - O que é o aggregation framework?
 - O que é um estágio de uma pipeline?
-- Como montar uma aggregation pipeline para fazer consultas mais robustas ao banco.
+- Como montar uma aggregation pipeline para fazer consultas mais robustas às coleções do `mongodb`.
 
 
 ## __Você será capaz de:__
-Montar uma pipeline usando estes operadores sozinhos ou em conjunto :
+Montar uma pipeline usando estes operadores sozinhos ou em conjunto:
 - $match
 - $project
 - $limit
@@ -31,7 +31,7 @@ Quando chegar a hora de combinar, você sempre pode consultar os exemplos e a do
 
 Um estágio em mongodb é definido como um objeto dentro da função aggregate, você pode definir como único parâmetro da função um _array_ de objetos ou um objeto como cada parâmetro da função. Como no exemplo abaixo:
 
-```jsx
+```js
 db.digimons.aggregate([
 	{
 		$match:{
@@ -57,16 +57,22 @@ db.digimons.aggregate([
 ]);
 ```
 
-```jsx
+```js
 // Resultado da query
 { "_id" : 171, "name" : "Imperialdramon FM", "hp" : 1780, "memoria" : 20 }
 { "_id" : 138, "name" : "Paildramon", "hp" : 1280, "memoria" : 14 }
 { "_id" : 46, "name" : "Veemon", "hp" : 1040, "memoria" : 5 }
 ```
 
-Antes de fazer os exercícios de fixação, salve o [link](https://raw.githubusercontent.com/nato-re/digimongodb/master/digimon.json), clicando em cima dele com o botão direito. Depois execute o comando a seguir substituindo `/caminho-para-pasta/que-salvou` pelo caminho da pasta que você salvou o banco de dados.
+Para fazer os exercícios padrões ou de fixação, salve o [link](https://raw.githubusercontent.com/nato-re/digimongodb/master/digimon.json), clicando em cima dele com o botão direito. Depois execute o comando a seguir substituindo `/caminho-para-pasta/que-salvou` pelo caminho da pasta que você salvou o banco de dados.
 ```shell
-mongoimport --db digimongo --collection digimons --file /caminho-para-pasta/que-salvou 
+# importando pelo terminal
+mongoimport --db digimongo --collection digimons --file /caminho-para-pasta/que-salvou
+```
+Execute sua instância do `mongo`, use o `db` digimongo e teste o tamanho da colecão.
+```js
+use digimongo
+db.digimons.count() // 249
 ```
 
 É **importante** ressaltar que, na maioria das vezes, a ordem dos estágios **faz diferença**. O primeiro estágio da _pipeline_ sempre recebe todos os documentos da coleção, enquanto os estágios posteriores recebem os documentos manipulados pelos estágios anteriores.
@@ -79,15 +85,15 @@ Vamos começar pelo `$match` e pelo `$project`. Por mais novo que pareça, você
 
 Assim como o primeiro parâmetro do **find({~~match~~})**, o `$match` seleciona apenas os documentos que entram nas restrições que você já construiu nos últimos dias.
 
-Com o `$match`, você passa **só os documentos selecionados** para o próximo estágio. Se não existe `$match` na pipeline, todos os documentos do banco são selecionados, assim como um `find` com um objeto vazio como primeiro parâmetro (`find({})`).
+Com o `$match`, você passa **só os documentos selecionados** para o próximo estágio. Se não existe `$match` na pipeline, todos os documentos do banco são selecionados, assim como um `find` com um objeto vazio como primeiro parâmetro (**find({~~match~~}**)).
 
 Imagine que você precise achar no banco apenas documentos com o campo value maior que 8000.
 
-```jsx
+```js
 db.example.aggregate([
 	{
 		$match:{
-			"poder":{ // define campo "poder" como critério para $match
+			"poder": { // define campo "poder" como critério para $match
 				$gt: 8000 // define que só documentos com "poder" maior que 8000 passarão para o próximo estágio 
 				},
 			"saga": "Saga dos Saiyajins" // além de poder maior 8000, só documentos com o campo "saga" igual a "Saga dos Saiyajins" serão selecionados 
@@ -103,10 +109,10 @@ Você pode usá-los para encontrar documentos que entram nas restrições que de
 
 ### Restrições
 
-A sintaxe é idêntica ao [primeiro parâmetro do find](https://docs.mongodb.com/manual/tutorial/query-documents/#read-operations-qudifery-argument), __porém__, o `$match` não aceita expressões de agregação brutas ([referência](https://docs.mongodb.com/manual/reference/operator/aggregation/match/index.html#restrictions)). Operadores como `$or`, `$eq`, `$and` não podem ser usados como operadores de alto nível, ou seja, usados como chave logo dentro do `$match`. Como solução, o operador `$expr` é usado para envelopar esses outros. Veja o exemplo abaixo para entender melhor:
+A sintaxe é idêntica ao [primeiro parâmetro do find](https://docs.mongodb.com/manual/tutorial/query-documents/#read-operations-qudifery-argument), **porém**, o `$match` não aceita expressões de agregação brutas ([referência](https://docs.mongodb.com/manual/reference/operator/aggregation/match/index.html#restrictions)). Operadores como `$or`, `$eq`, `$and` não podem ser usados como operadores de alto nível, ou seja, usados como chave logo dentro do `$match`. Como solução, o operador `$expr` é usado para envelopar esses outros. Veja o exemplo abaixo para entender melhor:
 
 
-```jsx
+```js
 db.digimons.aggregate([
     {
       $match: {
@@ -114,17 +120,32 @@ db.digimons.aggregate([
         $expr: {
           // operador usado para envelopar operador $or, pois ele não pode ser operador de alto nível dentro do estágio
           $or: [
-            { $gt: ["$spd", 90] }, // seleciona documentos com o campo "spd" maior que 90
-            { $lt: ["$atk", 60] }, // OU com o campo sp menor que 100
+            { $gt: ["$spd", 94] }, // seleciona documentos com o campo "spd" maior que 95
+            { $lte: ["$atk", 54] }, // OU com o campo atk menor ou igual a 76
           ],
         },
       },
     },
-])
+]).pretty()
 ```
 
-```jsx
+```js
 // Resultado 
+{
+	"_id" : 5,
+	"name" : "Poyomon",
+	"stage" : "Baby",
+	"type" : "Free",
+	"attribute" : "Neutral",
+	"memory" : 2,
+	"equip_slots" : 0,
+	"hp" : 540,
+	"sp" : 98,
+	"atk" : 54, // atk menor ou igual a 54
+	"def" : 59,
+	"int" : 95,
+	"spd" : 86
+}
 {
 	"_id" : 1,
 	"name" : "Kuramon",
@@ -138,22 +159,7 @@ db.digimons.aggregate([
 	"atk" : 79,
 	"def" : 69,
 	"int" : 68,
-	"spd" : 95 // spd maior que 90
-}
-{
-	"_id" : 3,
-	"name" : "Punimon",
-	"stage" : "Baby",
-	"type" : "Free",
-	"attribute" : "Neutral",
-	"memory" : 2,
-	"equip_slots" : 0,
-	"hp" : 870,
-	"sp" : 50, // sp menor que 60
-	"atk" : 97,
-	"def" : 87,
-	"int" : 50,
-	"spd" : 75
+	"spd" : 95 // spd maior que 94
 }
 ```
 
@@ -162,9 +168,9 @@ Use o próximo link para rever os operadores dos conteúdos passados e combiná-
 #### Fixação 
 Usando o banco importado após os primeiro exemplo de _pipeline_, resolva os exercícios abaixo:
 
-- Encontre o documento com `_id` 40.
-- Encontre digimons com o campo memory menor ou igual a 2.
-- Encontre digimons com sp menor ou igual a 50 e atk maior que 310.
+- Encontre o documento com `_id` igual a `40`.
+- Encontre digimons com o campo `memory` menor ou igual a `2`.
+- Encontre digimons com `sp` menor ou igual a 50 e `atk` maior que `310`.
 
 
 ### `$project`: passa documentos com campos específicos ou computa novos campos para o próximo estágio.
@@ -174,8 +180,7 @@ Usando o banco importado após os primeiro exemplo de _pipeline_, resolva os exe
 Este operador é como o segundo parâmetro do __find({}, {~~project~~})__.
 Com ele, você define quais campos serão passados ao próximo estágio da _pipeline_, além de poder renomear os campos que deseja e executar [operações](https://docs.mongodb.com/manual/reference/operator/aggregation/) como `$round`, `$push` e `$add`.
 
-
-```jsx
+```js
 { // Documento de Exemplo
 	"_id": ObjectId("5e7bc243b642fc6050badb13"),
 	"nome": "Oswaldo Pereira",
@@ -183,7 +188,7 @@ Com ele, você define quais campos serão passados ao próximo estágio da _pipe
 	"idade": 58 
 }
 ```
-```jsx
+```js
 db.example.aggregate([
 	{
 		$project:{
@@ -195,7 +200,7 @@ db.example.aggregate([
 	}
 ])
 ```
-```jsx
+```js
 // Retorno 
 {		
 	"nome": "Oswaldo Pereira" 
@@ -203,13 +208,36 @@ db.example.aggregate([
 	"novo_id": ObjectId("5e7bc243b642fc6050badb13")
 }
 ```
-<!-- ### Fixação 
+#### Incluindo cálculos no `$project`
 
-Ainda no banco usado acima, 
 
-```jsx
+Usaremos o operador [`$sum`](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/#definition) para demonstrar essa funcionalidade, que pode ser usado em outros estágios como no `$group` que veremos mais tarde. Veja o exemplo abaixo que projeta a soma dos campos `sp`, `atk`, `def`, `int`, `spd`. 
 
-``` -->
+```js
+db.digimons.aggregate([
+	{
+		$project:{
+			"somaDosCampos": {
+				$sum: ["$sp", "$atk", "$def", "$int", "$spd"]
+			}
+		}
+	}
+])
+```
+
+### Fixação 
+
+Ainda usando o banco de digimons importado anteriormente:
+
+- Projete apenas o `name` e o `equip_slots` dos documentos.
+
+- Usando a última _query_, mude a chave de `equip_slots` para `"espacoDeEquipamentos"`.
+
+- Adicione um novo estágio no último exercício de maneira que a _query_ retorne apenas documentos com `equip_slot` igual a `3`.
+
+- Adicione na última _query_ um campo que faça à média os valores de `sp`, `atk`, `def`, `int`, `spd`, como no último exemplo, chame de `"mediaAtributos"`.
+Dica: use [`$avg`](https://docs.mongodb.com/manual/reference/operator/aggregation/avg/)
+
 
 ### `$sort:` ordena os documentos de saída de acordo com o campo definido, de forma crescente ou decrescente.
 
@@ -223,7 +251,7 @@ Já com `-1`, se ordena do maior valor para o menor, ou seja, em ordem decrescen
 
 O `$sort` também funciona em strings, veja os exemplos:
 
-```jsx
+```js
  db.users.aggregate([
 	{
 	 $sort: { "name": 1 } // ordena os documentos pelo nome em ordem alfabética crescente, do A ao Z
@@ -231,12 +259,12 @@ O `$sort` também funciona em strings, veja os exemplos:
  ])
 ```
 
-```jsx
+```js
  db.example.aggregate([
 	{
 	 $sort: { 
-		 	"preco": -1, // documentos selecionados em ordem decrescente
-			"nome": 1 // ordenados de maneira alfabética
+		 	"preco": -1, // documentos retornados em ordem decrescente em relação ao valor de "preco"
+			"nome": 1 // e também ordenados de maneira alfabética
 		  	}
  	}
  ])
@@ -253,22 +281,16 @@ Este operador é simples, porém importante, pois limita a quantidade de documen
 
 Vamos ver um exemplo: suponha que você quer que apenas 3 documentos sejam retornados da sua _query_. Como um `find().limit(3)`.
 
-```jsx
+```js
 db.example.aggregate([
 	{ $limit: 3 }
 ])
 ```
+#### Fixação
 
-```jsx
-db.digimon.aggregate([
-	{ 
-		$sort: {
-			"atk": 1
-		}
-	},
-	{ $limit: 1 }
-])
-```
+No mesmo banco dos últimos exercícios de fixação:
+- Usando este operador e o último, `$sort`, encontre o digimon com menor valor do campo `atk`.
+
 Retorna o documento com o menor valor do campo "atk".
 
 ### `$group`: agrupa por uma chave distinta, ou por uma chave composta.
@@ -285,7 +307,7 @@ O interessante deste operador de agregação é executar operação com os campo
 
 Veja o exemplo abaixo para entender o funcionamento do operador, com campo `_id` definido como `null`.
 
-```jsx
+```js
 db.digimons.aggregate([
 	{
 		$group: {
@@ -295,7 +317,7 @@ db.digimons.aggregate([
 	}
 ]);
 ```
-```jsx
+```js
 // Resultado 
 { "_id" : null, "total" : 249 }
 ```
@@ -311,42 +333,40 @@ Alguns deles são:
 
 - `$avg`: Retorna a média de valores numéricos. Valores **não numéricos** são ignorados;
 
-- `$max`: Retorna o maior valor de cada grupo;
-
-- `$push`: Retorna um array com os valores da expressão para cada grupo;
+- `$push`: Retorna um _array_ com os valores da expressão para cada grupo;
 
 
+Veja o exemplo abaixo da soma do campo `"atk"` de todos os documentos nomeada pela chave `total`.
 
-Veja o exemplo abaixo da soma do campo `"atk"` de todos os documentos nomeados pela chave `total`.
-
-```jsx
+```js
 db.digimons.aggregate([
 	{
 		$group:{
-			"_id": 'somaDosAtaques',
-			"total": { $sum: "$atk" }
+			"_id": "somaDosAtaques", // _id é uma string, portanto agrupa todos os documentos como valores falsy
+			"total": { $sum: "$atk" } // soma os valores de atk de cada documento no acumulador
 		}
 	}
 ]);
 ```
-```jsx
+
+```js
 // Resultado
 { "_id" : "somaDosAtaques", "total" : 31005 }
 ```
 
 Quando se usa um `$` na frente do valor de `_id`, o estágio agrupa os valores dos documentos que contém o campo definido pelo `_id`. Veja o exemplo abaixo:
 
-```jsx
+```js
 db.digimons.aggregate([
 	{
 		$group:{
 			"_id": "$type", // agrupa pelo campo type do digimon
-			"ataqueTotal" : { $sum: "$atk" } // acumula a soma do ataque dos digimons de cada tipo no campo ataqueTotal 
+			"ataqueTotal" : { $sum: "$atk" } // acumula a soma valor de atk dos digimons de cada tipo no campo ataqueTotal 
 		}
 	}
 ]);
 ```
-```jsx
+```js
 // Resultados
 { "_id" : "Virus", "ataqueTotal" : 10696 }
 { "_id" : "Vaccine", "ataqueTotal" : 8986 }
@@ -354,23 +374,35 @@ db.digimons.aggregate([
 { "_id" : "Data", "ataqueTotal" : 7222 }
 ```
 
+#### Fixação
+
+Usando o banco das últimas fixações:
+- Usando o `$group`, encontre a metade da quantidade de documentos na coleção, chame de `"metadeDocs"`.
+- Faça a média de todos valores de `hp` dos digimons na coleção e chame de `"mediaHp"`.
+- Altere a última _query_ de maneira que o agrupamento seja pelo campo `attribute`.
+
+
 ## Exercícios
 
-1. Blue Monday: encontre todos os digimons do `attribute` Water.
+Usando o banco digimongo importado no início do conteúdo e usado nos exercícios de fixação, o que acha de testar seus aprendizados?
 
-2. Misirlou: altere a query anterior de forma que os documentos também sejam restritos ao campo `memory` maior ou igual a 80.
+1. Blue Monday: encontre todos os digimons do `attribute` `"Water"`.
 
-3. Pipeline: adicione a query anterior um novo estágio, de maneira que só os campos `stage`, `name`, `memory` e `attribute` seja retornados.
+2. Misirlou: altere a _query_ anterior de forma que os documentos também sejam restritos ao campo `spd` maior ou igual a `80`.
 
-4. Earth, Wind and Fire: selecione documentos com `attribute` Earth, Fire ou Wind digimons, projete apenas `name` e `attribute`.
+3. Pipeline: adicione a _query_ anterior um novo estágio, de maneira que só os campos `stage`, `name`, `memory` e `attribute` seja retornados.
+
+4. Earth, Wind and Fire: selecione documentos com `attribute` `"Earth"`, `"Fire"` ou `"Wind"` digimons, projete apenas `name` e `attribute`.
 
 5. Nitro: retorne apenas o digimon com o maior valor no campo `spd`.
 
-6. O Mago é Implacável: ache qual digimon tem o maior valor do campo `int`, renomeie o campo `int` por poderMagico, `sp` por mana e adicione o campo "mago" com valor Patolino.
+6. Changes: Agrupe por `stage` e encontre a média dos campos `hp`, `sp`, `atk`, `def`, `int`, `spd`; arrendonde os calores para números inteiros e nomeie os campos de saída como `"mediaHp"`, `"mediaSp"`, `"mediaAtk"`, `"mediaDef"`, `"mediaInt"` e `"mediaSpd"`.
 
-7. Push It To The Limit: selecione 7 digimons com maiores valores de `memory` e coloque seus nomes num array num campo chamado names.
+### Bonus 
 
-8. Changes: Agrupe por `stage` e encontre a média dos campos `hp`, `sp`, `atk`, `def`, `int`, `spd`; arrendonde os calores para números inteiros e nomeie os campos de saída como mediaHp, mediaSp, mediaAtk, mediaDef, mediaInt e mediaSpd.
+7. O Mago é Implacável: ache qual digimon tem o maior valor do campo `int`, renomeie o campo `int` por poderMagico, `sp` por `mana` e adicione o campo `"mago"` com valor `"Patolino"`.
+
+8. Push It To The Limit: selecione 7 digimons com maiores valores de `memory` e coloque seus nomes em um _array_, no valor de um campo chamado `"names"`.
 
 ## Recursos Adicionais
 

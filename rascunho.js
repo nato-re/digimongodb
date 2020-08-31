@@ -34,7 +34,7 @@ db.digimons.aggregate([
 db.digimons.aggregate([
     {
       $match: {
-        "memory": { $lte: 3 },
+        "spd": { $gte: 80 },
         "attribute": "Water"
       },
     },
