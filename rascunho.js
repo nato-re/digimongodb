@@ -1,4 +1,18 @@
-// encontre os pokemons com o campo memory menor ou igual a 2
+// encontre digimons com sp menor ou igual a 50 e atk maior que 310
+db.digimons.aggregate([
+    {
+        $match: {
+            $expr:{
+                $or:[
+                     { $lte: ["$sp", 50] },
+                     { $gt: ["$atk", 310] }
+                ]
+            }   
+        },
+    },
+])
+
+// encontre digimons com o campo memory menor ou igual a 2
 
 db.digimons.aggregate([
     {
@@ -10,7 +24,7 @@ db.digimons.aggregate([
 .pretty();
 
 
-// o mago é implacável, ache o digimon com maior valor do campo int
+// o mago é implacável, ache qual digimon tem o maior valor do campo int
 
 db.digimons.aggregate([
     {
@@ -21,7 +35,7 @@ db.digimons.aggregate([
     { $limit: 1 }
 ]);
 
-// agrupe os digimons por tipo e crie um array como os nomes deles
+// agrupe digimons por tipo e crie um array como os nomes deles
 
 db.digimons.aggregate([
     {
@@ -33,7 +47,7 @@ db.digimons.aggregate([
 ])
 .pretty();
 
-// push it to the limit, selecione os 7 digimons com maior "memory" e coloque seus nomes num array no campo names
+// push it to the limit, selecione 7 digimons com maiores valores de "memory" e coloque seus nomes num array no campo names
 
 db.digimons.aggregate([
     {

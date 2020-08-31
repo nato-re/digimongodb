@@ -29,7 +29,7 @@ Cada estágio opera sobre o documento recebido e passa o resultado para o próxi
 
 Quando chegar a hora de combinar você sempre pode consultar os exemplos e a documentação, [link](https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/#db-collection-aggregate-stages).
 
-Um estágio em mongodb é definido como um objeto dentro da função aggregate, você pode definí-los como um *array* de objetos, sendo único parâmetro da função ou como um objeto como cada parâmetro da função. Como no exemplo abaixo:
+Um estágio em mongodb é definido como um objeto dentro da função aggregate, você pode definí-los como um _array_ de objetos, sendo único parâmetro da função ou como um objeto como cada parâmetro da função. Como no exemplo abaixo:
 
 ```jsx
 db.digimons.aggregate([
@@ -159,7 +159,14 @@ db.digimons.aggregate([
 ```
 
 Use o próximo link para rever os operadores dos conteúdos passados para combiná-los nos seus estágios, acessando [aqui](https://docs.mongodb.com/manual/reference/operator/query/).
- 
+
+#### Fixação 
+Usando o banco importado após os primeiro exemplo que _pipeline_, resolva os exercícios abaixo:
+
+- Encontre o documento com `_id` 40.
+- Encontre digimons com o campo memory menor ou igual a 2.
+- Encontre digimons com sp menor ou igual a 50 e atk maior que 310.
+
 
 ### `$project`: passa documentos com campos específicos ou computa novos campos para o próximo estágio.
 
@@ -222,7 +229,7 @@ O `$sort` também funciona em strings, veja os exemplos:
  ])
 ```
 // confuso
-Ordena os documentos na ordem alfabética, ou seja, os que o valor do campo "name", que começam com 'a' virão antes dos com 'z'.
+Ordena os documentos na ordem alfabética, ou seja, os que o valor do campo "name" que começam com 'a' virão antes dos com 'z'.
 
 ```jsx
  db.example.aggregate([
@@ -240,9 +247,9 @@ Ordena os documentos na ordem alfabética, ou seja, os que o valor do campo "nam
 
 [Link](https://docs.mongodb.com/manual/reference/operator/aggregation/limit/index.html) da documentação
 
-Esse operador é simples, porém importante, em qualquer estágio da pipeline, ele limita a quantidade de documentos passados para o próximo estágio ao valor de `$limit`.
+Esse operador é simples, porém importante. Em qualquer estágio da _pipeline_, ele limita a quantidade de documentos passados para o próximo estágio ao valor de `$limit`.
 
-Vamos ver um exemplo, suponha que você quer que apenas 3 documentos sejam retornados da sua query. Como um `find().limit(3)`.
+Vamos ver um exemplo: suponha que você quer que apenas 3 documentos sejam retornados da sua _query_. Como um `find().limit(3)`.
 
 ```jsx
 db.example.aggregate([
@@ -270,9 +277,9 @@ O operador cria um novo documento para cada valor diferente do campo definido na
 
 Usando esse operador, o valor de `_id` **não** tem a mesma função do `_id` (identificação única) dentro dos documentos. Ele no `$group` define por qual campo os documentos vão ser agrupados.
 
-Valores [falsy](https://developer.mozilla.org/pt-BR/docs/Glossario/Falsy) no campo `_id` ou uma string qualquer, que **não** contem `$` na frente, agruparão todos os documentos em um só.
+Valores [falsy](https://developer.mozilla.org/pt-BR/docs/Glossario/Falsy) no campo `_id` ou uma _string_ qualquer, que **não** contém `$` na frente, agruparão todos os documentos em um só.
 
-O interessante desse operador de agregação é executar operação com os campos dos documentos agrupados, como `$sum`, `$avg`, `$push` de um valor de um campo em um array. Veja essa [lista](https://docs.mongodb.com/manual/reference/operator/aggregation/group/#accumulators-group) de operadores para entender mais a fundo quais pode usar. 
+O interessante desse operador de agregação é executar operação com os campos dos documentos agrupados, como `$sum`, `$avg`, `$push` de um valor de um campo em um _array_. Veja essa [lista](https://docs.mongodb.com/manual/reference/operator/aggregation/group/#accumulators-group) de operadores para entender mais a fundo quais pode usar. 
 
 Veja o exemplo abaixo para entender o funcionamento do operador, com campo `_id` definido como null.
 
@@ -294,7 +301,7 @@ Esse exemplo soma a quantidade de documentos na coleção `digimons`, pois selec
 
 Agora se definir um campo dentro do `$sum`, ou outro [operador de acumulação](https://docs.mongodb.com/manual/reference/operator/aggregation/group/#accumulator-operator), o `$group` usa o valor desse campo para executar essa acumulação.
 
-Veja o exemplo abaixo da soma do campo `"atk"` de todos os documentos nomeado pela chave `total`.
+Veja o exemplo abaixo da soma do campo `"atk"` de todos os documentos nomeados pela chave `total`.
 
 ```jsx
 db.digimons.aggregate([
