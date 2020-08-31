@@ -35,7 +35,7 @@ Um estágio em mongodb é definido como um objeto dentro da função aggregate, 
 db.digimons.aggregate([
 	{
 		$match:{
-			"type":'Free', // seleciona apenas digimons do tipo Free
+			"type":"Free", // seleciona apenas digimons do tipo Free
 			"attribute": "Neutral" // e com atributo Neutral
 		}
 	},
@@ -77,7 +77,7 @@ Vamos começar pelo `$match` e pelo `$project`. Por mais novo que pareça, você
 
 [Link](https://docs.mongodb.com/manual/reference/operator/aggregation/match/#pipe._S_match) para documentação do operador de estágio.
 
-Assim como o primeiro parâmetro do **.find({~~esse~~})**, o `$match` seleciona apenas os documentos que entram nas restrições que você já construiu nos últimos dias.
+Assim como o primeiro parâmetro do **find({~~match~~})**, o `$match` seleciona apenas os documentos que entram nas restrições que você já construiu nos últimos dias.
 
 Com o `$match`, você passa **só os documentos selecionados** para o próximo estágio. Se não existe `$match` na pipeline, todos os documentos do banco são selecionados, assim como um `find` com um objeto vazio como o primeiro parâmetro (`find({})`).
 
@@ -110,7 +110,7 @@ A sintaxe é idêntica ao [primeiro parâmetro do find](https://docs.mongodb.com
 db.digimons.aggregate([
     {
       $match: {
-        stage: "Baby", // seleciona apenas digimons do stage Baby
+        "stage": "Baby", // seleciona apenas digimons do stage Baby
         $expr: {
           // operador usado para envelopar operador $or, pois ele não pode ser operador de alto nível dentro do estágio
           $or: [
@@ -290,7 +290,7 @@ Veja o exemplo abaixo para entender o funcionamento do operador, com campo `_id`
 db.digimons.aggregate([
 	{
 		$group: {
-				_id: null, // seleciona todos os documentos
+				"_id": null, // seleciona todos os documentos
 				"total": { $sum: 1 } // soma 1 na contagem para cada documento e armazena no campo "total"
 				}
 	}
