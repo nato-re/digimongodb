@@ -155,7 +155,6 @@ db.digimons.aggregate([
 	"int" : 50,
 	"spd" : 75
 }
-
 ```
 
 Use o próximo link para rever os operadores dos conteúdos passados para combiná-los nos seus estágios, acessando [aqui](https://docs.mongodb.com/manual/reference/operator/query/).
@@ -231,7 +230,7 @@ O `$sort` também funciona em strings, veja os exemplos:
  	}
  ])
 ```
-// confuso
+
 Ordena os documentos na ordem alfabética, ou seja, os que o valor do campo "name" que começam com 'a' virão antes dos com 'z'.
 
 ```jsx
@@ -284,7 +283,7 @@ Valores [falsy](https://developer.mozilla.org/pt-BR/docs/Glossario/Falsy) no cam
 
 O interessante desse operador de agregação é executar operação com os campos dos documentos agrupados, como `$sum`, `$avg`, `$push` de um valor de um campo em um _array_. Veja essa [lista](https://docs.mongodb.com/manual/reference/operator/aggregation/group/#accumulators-group) de operadores para entender mais a fundo quais pode usar. 
 
-Veja o exemplo abaixo para entender o funcionamento do operador, com campo `_id` definido como null.
+Veja o exemplo abaixo para entender o funcionamento do operador, com campo `_id` definido como `null`.
 
 ```jsx
 db.digimons.aggregate([
@@ -303,6 +302,18 @@ db.digimons.aggregate([
 Esse exemplo soma a quantidade de documentos na coleção `digimons`, pois seleciona todos os documentos e soma 1 para cada. Se fosse 2 no valor do campo, somaria 2 para cada documento e o "total" seria 498.
 
 Agora se definir um campo dentro do `$sum`, ou outro [operador de acumulação](https://docs.mongodb.com/manual/reference/operator/aggregation/group/#accumulator-operator), o `$group` usa o valor desse campo para executar essa acumulação.
+
+Alguns deles são:
+
+- `$sum`: Retorna a soma de valores numéricos. Valores **não numéricos** são ignorados.
+
+- `$avg`: Retorna a média de valores numéricos. Valores **não numéricos** são ignorados;
+
+- `$max`: Retorna o maior valor de cada grupo;
+
+- `$push`: Retorna um array com os valores da expressão para cada grupo;
+
+
 
 Veja o exemplo abaixo da soma do campo `"atk"` de todos os documentos nomeados pela chave `total`.
 
@@ -327,8 +338,8 @@ Quando se usa um `$` na frente do valor de `_id`, o estágio agrupa os valores d
 db.digimons.aggregate([
 	{
 		$group:{
-			"_id": '$type', // agrupa pelo campo type do digimon
-			"ataqueTotal": { $sum: "$atk" } // acumula a soma do ataque dos digimons de cada tipo no campo ataqueTotal 
+			"_id": "$type", // agrupa pelo campo type do digimon
+			"ataqueTotal" : { $sum: "$atk" } // acumula a soma do ataque dos digimons de cada tipo no campo ataqueTotal 
 		}
 	}
 ]);
