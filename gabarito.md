@@ -272,7 +272,7 @@ db.digimons.aggregate([
 ```
 ## Bonus
 
-7. O Mago é Implacável: ache qual digimon tem o maior valor do campo `int`, renomeie o campo `int` por poderMagico, `sp` por `mana` e adicione o campo `"mago"` com valor `"Patolino"`.
+7. O Mago é Implacável: ache qual digimon tem o maior valor do campo `int`, renomeie o campo `int` por poderMagico, `sp` por `mana` e adicione o campo `"mago"` com valor `"Patolino"`. Retorne apenas estes 3 campos.
 ```jsx
 db.digimons.aggregate([
   {
@@ -283,6 +283,7 @@ db.digimons.aggregate([
   { $limit: 1 },
   {
     $project: {
+      "_id": 0,
       "mago": "Patolino",
       "poderMagico": "$int",
       "mana": "$sp",
@@ -291,7 +292,7 @@ db.digimons.aggregate([
 ]);
 ```
 
-7. Push It To The Limit: selecione 7 digimons com maiores valores de `memory` e coloque seus nomes em um _array_, no valor de um campo chamado `"names"`.
+8. Push It To The Limit: selecione 7 digimons com maiores valores de `memory` e coloque seus nomes em um _array_, no valor de um campo chamado `"limit"` (uma _string_ comum, não o operador).
 
 ```jsx
 db.digimons.aggregate([
@@ -301,8 +302,8 @@ db.digimons.aggregate([
     { $limit: 7 },
     {
       $group: {
-        _id: "push it to the limit",
-        names: { $push: "$name" },
+        "_id": "push it to the limit", // valor arbitrário
+        "limit": { $push: "$name" },
       },
     },
 ]);
