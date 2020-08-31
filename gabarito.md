@@ -240,7 +240,7 @@ db.digimons.aggregate([
       },
     },
     { $limit: 1 },
-  ]);
+]);
 ```
 
 6. Changes: Agrupe por `stage` e encontre a média dos campos `hp`, `sp`, `atk`, `def`, `int`, `spd`; arrendonde os calores para números inteiros e nomeie os campos de saída como `"mediaHp"`, `"mediaSp"`, `"mediaAtk"`, `"mediaDef"`, `"mediaInt"` e `"mediaSpd"`.
