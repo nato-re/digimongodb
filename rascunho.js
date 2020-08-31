@@ -9,7 +9,7 @@ db.digimons.aggregate([
     },
 ]);
 
-// 1 Blue Monday, encontre todos os digimons do attribute Water.
+// 1. Blue Monday: encontre todos os digimons do attribute Water.
 db.digimons.aggregate([
     {
         $match: {
@@ -18,7 +18,7 @@ db.digimons.aggregate([
     }
 ]);
 
-// 2 * Misirlou, altere a query de forma que os documentos também tenham o campo memory maior ou igual a 80
+// 2. Misirlou: altere a query de forma que os documentos também tenham o campo memory maior ou igual a 80
 
 db.digimons.aggregate([
     {
@@ -29,7 +29,7 @@ db.digimons.aggregate([
     },
 ]);
 
-// 3 Pipeline: adicione a query anterior um novo estágio, de maneira que só os campor stage, name, memory e attribute seja retornados.
+// 3. Pipeline: adicione a query anterior um novo estágio, de maneira que só os campor stage, name, memory e attribute seja retornados.
 
 db.digimons.aggregate([
     {
@@ -49,7 +49,7 @@ db.digimons.aggregate([
     }
 ]);
 
-// 4 Earth, Wind and Fire: selecione documentos com attribute Earth, Fire ou Wind digimons, projete apenas name e attribute 
+// 4. Earth, Wind and Fire: selecione documentos com attribute Earth, Fire ou Wind digimons, projete apenas name e attribute.
 
 db.digimons.aggregate([
     {
@@ -61,14 +61,14 @@ db.digimons.aggregate([
     },
     {
       $project: {
-        "digimon": 1,
+        "name": 1,
         "_id": 0,
         "attribute": 1,
       },
     },
 ]);
 
-// 5 Nitro: retorne apenas o digimon com o maior valor no campo "spd" 
+// 5. Nitro: retorne apenas o digimon com o maior valor no campo "spd".
 
 db.digimons.aggregate([
     {
@@ -79,7 +79,7 @@ db.digimons.aggregate([
     { $limit: 1 },
   ]);
 
-// 6 O Mago é Implacável, ache qual digimon tem o maior valor do campo int, renomeie o campo int por poderMagico, "sp" por mana e adicione o campo "mago" com valor Patolino
+// 6. O Mago é Implacável: ache qual digimon tem o maior valor do campo "int", renomeie o campo "int" por poderMagico, "sp" por mana e adicione o campo "mago" com valor Patolino.
 
 db.digimons.aggregate([
   {
@@ -98,28 +98,12 @@ db.digimons.aggregate([
 ]);
 
 
-// 7 push it to the limit, selecione 7 digimons com maiores valores de "memory" e coloque seus nomes num array no campo names
-
-db.digimons
-  .aggregate([
-    {
-      $sort: { memory: -1 },
-    },
-    { $limit: 7 },
-    {
-      $group: {
-        _id: "push it to the limit",
-        names: { $push: "$name" },
-      },
-    },
-]);
-
-// 6 ache a média dos campos hp, sp, atk, def, int, spd; arrendonde os calores para números inteiros e nomeie os campos de sáida como mediaHp, mediaSp, mediaAtk, mediaDef, mediaInt e mediaSpd
+// 7. Changes: Encontre a média dos campos hp, sp, atk, def, int, spd; arrendonde os calores para números inteiros e nomeie os campos de sáida como mediaHp, mediaSp, mediaAtk, mediaDef, mediaInt e mediaSpd.
 
 db.digimons.aggregate([
     {
       $group: {
-        _id: null,
+        _id: "$stage",
         hp: { $avg: "$hp" },
         sp: { $avg: "$sp" },
         atk: { $avg: "$atk" },
@@ -136,6 +120,22 @@ db.digimons.aggregate([
         mediaDef: { $round: "$def" },
         mediaInt: { $round: "$int" },
         mediaSpd: { $round: "$spd" },
+      },
+    },
+]);
+
+// 8. Push it to the limit: selecione 7 digimons com maiores valores de "memory" e coloque seus nomes num array no campo names
+
+db.digimons
+  .aggregate([
+    {
+      $sort: { memory: -1 },
+    },
+    { $limit: 7 },
+    {
+      $group: {
+        _id: "push it to the limit",
+        names: { $push: "$name" },
       },
     },
 ]);

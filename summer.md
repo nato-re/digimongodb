@@ -14,10 +14,10 @@ Montar uma pipeline usando estes operadores sozinhos ou em conjunto :
 - $sort
 - $group 
 
-## __Porque isso é importante?__
+## __Por que isso é importante?__
 Aggregation é um framework (estrutura) para visualização e manipulação de dados, usando um ou múltiplos **estágios** em sequência, ou seja, monta a famosa `pipeline`.
 
-Imagine que você precisa montar consultas que precisam filtrar documentos, inserir novos  campos, agrupar documentos por um campo e realizar operações encima desses resultados. Tudo em uma tacada só. 
+Imagine que você precise montar consultas filtrem documentos, inseriram novos campos, agrupapem documentos por determinados campos e realizar operações em cima desses resultados. Tudo em uma tacada só. 
 
 Usando o Aggregations você tem ferramentas para criar buscas mais complexas no seu banco. Além disso, você consegue manipular os resultados de cada **estágio**.
 
@@ -27,9 +27,9 @@ Usando os operadores é possível filtrar documentos por comparação, projetar 
 
 Cada estágio opera sobre o documento recebido e passa o resultado para o próximo. Existem muitos operadores de agregação e a mágica está em combiná-los, mas vamos conhecer um de cada vez.
 
-Quando chegar a hora de combinar você sempre pode consultar os exemplos e a documentação, [link](https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/#db-collection-aggregate-stages).
+Quando chegar a hora de combinar, você sempre pode consultar os exemplos e a documentação, [link](https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/#db-collection-aggregate-stages).
 
-Um estágio em mongodb é definido como um objeto dentro da função aggregate, você pode definí-los como um _array_ de objetos, sendo único parâmetro da função ou como um objeto como cada parâmetro da função. Como no exemplo abaixo:
+Um estágio em mongodb é definido como um objeto dentro da função aggregate, você pode definir como único parâmetro da função um _array_ de objetos ou um objeto como cada parâmetro da função. Como no exemplo abaixo:
 
 ```jsx
 db.digimons.aggregate([
@@ -64,22 +64,22 @@ db.digimons.aggregate([
 { "_id" : 46, "name" : "Veemon", "hp" : 1040, "memoria" : 5 }
 ```
 
-Antes de fazer os exercícios de fixação, salve o [link](https://raw.githubusercontent.com/nato-re/digimongodb/master/digimon.json), clicando encima dele com o botão direito. Depois execute o comando a seguir substituindo `/caminho-para-pasta/que-salvou` pelo caminho da pasta que você salvou o banco de dados.
+Antes de fazer os exercícios de fixação, salve o [link](https://raw.githubusercontent.com/nato-re/digimongodb/master/digimon.json), clicando em cima dele com o botão direito. Depois execute o comando a seguir substituindo `/caminho-para-pasta/que-salvou` pelo caminho da pasta que você salvou o banco de dados.
 ```shell
 mongoimport --db digimongo --collection digimons --file /caminho-para-pasta/que-salvou 
 ```
 
-É **importante** ressaltar que, a ordem dos estágios na maioria das vezes **faz diferença**. O primeiro estágio da _pipeline_, sempre recebe todos os documentos da coleção e estágios posteriores: recebem os documentos manipulados pelos estágios anteriores.
+É **importante** ressaltar que, na maioria das vezes, a ordem dos estágios **faz diferença**. O primeiro estágio da _pipeline_ sempre recebe todos os documentos da coleção, enquanto os estágios posteriores recebem os documentos manipulados pelos estágios anteriores.
 
 Vamos começar pelo `$match` e pelo `$project`. Por mais novo que pareça, você já teve o contato com as mecânicas deles no conteúdo de `find`.
 
-### `$match`: filtra o numero de documentos por uma restrição e passa o retorno para o próximo estágio.
+### `$match`: filtra o número de documentos por uma restrição e passa o retorno para o próximo estágio.
 
 [Link](https://docs.mongodb.com/manual/reference/operator/aggregation/match/#pipe._S_match) para documentação do operador de estágio.
 
 Assim como o primeiro parâmetro do **find({~~match~~})**, o `$match` seleciona apenas os documentos que entram nas restrições que você já construiu nos últimos dias.
 
-Com o `$match`, você passa **só os documentos selecionados** para o próximo estágio. Se não existe `$match` na pipeline, todos os documentos do banco são selecionados, assim como um `find` com um objeto vazio como o primeiro parâmetro (`find({})`).
+Com o `$match`, você passa **só os documentos selecionados** para o próximo estágio. Se não existe `$match` na pipeline, todos os documentos do banco são selecionados, assim como um `find` com um objeto vazio como primeiro parâmetro (`find({})`).
 
 Imagine que você precise achar no banco apenas documentos com o campo value maior que 8000.
 
@@ -99,7 +99,7 @@ O campo `"poder"` do exemplo é o definido para fazer a seleção de documentos 
 
 Outros operadores [lógicos](https://docs.mongodb.com/manual/reference/operator/query-logical/) ou de [comparação](https://docs.mongodb.com/manual/reference/operator/query-comparison/) podem ser usados no `$match` e entre outros operadores do aggregate.
 
-Usando eles para encontrar documentos, que entram nas restrições que você deseja aplicar na busca, como `$gt`, `$lte`, `$in` ... 
+Você pode usá-los para encontrar documentos que entram nas restrições que deseja aplicar na busca, como `$gt`, `$lte`, `$in`, etc.
 
 ### Restrições
 
@@ -114,7 +114,7 @@ db.digimons.aggregate([
         $expr: {
           // operador usado para envelopar operador $or, pois ele não pode ser operador de alto nível dentro do estágio
           $or: [
-            { $gt: ["$spd", 90] }, // seleciona documnetos com o campo "spd" maior que 90
+            { $gt: ["$spd", 90] }, // seleciona documentos com o campo "spd" maior que 90
             { $lt: ["$atk", 60] }, // OU com o campo sp menor que 100
           ],
         },
@@ -157,10 +157,10 @@ db.digimons.aggregate([
 }
 ```
 
-Use o próximo link para rever os operadores dos conteúdos passados para combiná-los nos seus estágios, acessando [aqui](https://docs.mongodb.com/manual/reference/operator/query/).
+Use o próximo link para rever os operadores dos conteúdos passados e combiná-los nos seus estágios, acessando [aqui](https://docs.mongodb.com/manual/reference/operator/query/).
 
 #### Fixação 
-Usando o banco importado após os primeiro exemplo que _pipeline_, resolva os exercícios abaixo:
+Usando o banco importado após os primeiro exemplo de _pipeline_, resolva os exercícios abaixo:
 
 - Encontre o documento com `_id` 40.
 - Encontre digimons com o campo memory menor ou igual a 2.
@@ -172,7 +172,7 @@ Usando o banco importado após os primeiro exemplo que _pipeline_, resolva os ex
 [Link](https://docs.mongodb.com/manual/reference/operator/aggregation/project/#pipe._S_project) para documentação do operador de estágio.
 
 Este operador é como o segundo parâmetro do __find({}, {~~project~~})__.
-Com ele, você define quais campos serão passados ao próximo estágio da pipeline. Além de poder renomear os campos que deseja e executar [operações](https://docs.mongodb.com/manual/reference/operator/aggregation/) como `$round`, `$push` e `$add`.
+Com ele, você define quais campos serão passados ao próximo estágio da _pipeline_, além de poder renomear os campos que deseja e executar [operações](https://docs.mongodb.com/manual/reference/operator/aggregation/) como `$round`, `$push` e `$add`.
 
 
 ```jsx
@@ -188,7 +188,7 @@ db.example.aggregate([
 	{
 		$project:{
 			"nome": 1, // $nome será projetado para próximo estágio 
-			"_id": "$cpf", // _id virará o $cpf depois do estágio
+			"_id": "$cpf", // _id se tornará o $cpf depois do estágio
 			"novo_id": "$_id", // campo novo_id projetado como $_id 
 			"idade": 0  // a idade é projetada pois o valor do campo é falsy
 		}
@@ -211,27 +211,25 @@ Ainda no banco usado acima,
 
 ```
 
-### `$sort:` ordena os documentos de saída de acordo com o campo definido, de forma decrescente ou crescente.
+### `$sort:` ordena os documentos de saída de acordo com o campo definido, de forma crescente ou decrescente.
 
 [Link](https://docs.mongodb.com/manual/reference/operator/aggregation/sort/index.html) da documentação.
 
-O operador define um campo e ordena os documentos de entrada **usando o campo definido com critério de ordenação**:
+O operador define um campo e ordena os documentos de entrada **usando o campo definido como critério de ordenação**:
 
-Usando `1` como valor desse campo, os documentos são retornados em ordem crescente, com o menor valor primeiro e maior por último. 
+Usando `1` como valor desse campo, os documentos são retornados em ordem crescente, do menor para o maior valor. 
 
-E com `-1`, se ordena do maior valor para o menor, ou seja, em ordem decrescente.
+Já com `-1`, se ordena do maior valor para o menor, ou seja, em ordem decrescente.
 
 O `$sort` também funciona em strings, veja os exemplos:
 
 ```jsx
  db.users.aggregate([
 	{
-	 $sort: { "name": 1 } // ordena os documentos pelo nome em ordem alfabética crescente 
+	 $sort: { "name": 1 } // ordena os documentos pelo nome em ordem alfabética crescente, do A ao Z
  	}
  ])
 ```
-
-Ordena os documentos na ordem alfabética, ou seja, os que o valor do campo "name" que começam com 'a' virão antes dos com 'z'.
 
 ```jsx
  db.example.aggregate([
@@ -249,7 +247,9 @@ Ordena os documentos na ordem alfabética, ou seja, os que o valor do campo "nam
 
 [Link](https://docs.mongodb.com/manual/reference/operator/aggregation/limit/index.html) da documentação
 
-Esse operador é simples, porém importante. Em qualquer estágio da _pipeline_, ele limita a quantidade de documentos passados para o próximo estágio ao valor de `$limit`.
+
+Este operador é simples, porém importante, pois limita a quantidade de documentos passados para o próximo estágio ao estipulado nele. Vale ressaltar que funciona **em qualquer estágio da _pipeline_** .
+
 
 Vamos ver um exemplo: suponha que você quer que apenas 3 documentos sejam retornados da sua _query_. Como um `find().limit(3)`.
 
@@ -279,9 +279,9 @@ O operador cria um novo documento para cada valor diferente do campo definido na
 
 Usando esse operador, o valor de `_id` **não** tem a mesma função do `_id` (identificação única) dentro dos documentos. Ele no `$group` define por qual campo os documentos vão ser agrupados.
 
-Valores [falsy](https://developer.mozilla.org/pt-BR/docs/Glossario/Falsy) no campo `_id` ou uma _string_ qualquer, que **não** contém `$` na frente, agruparão todos os documentos em um só.
+Valores [falsy](https://developer.mozilla.org/pt-BR/docs/Glossario/Falsy) no campo `_id` ou uma _string_ qualquer, que **não** contenham `$` na frente, agruparão todos os documentos em um só.
 
-O interessante desse operador de agregação é executar operação com os campos dos documentos agrupados, como `$sum`, `$avg`, `$push` de um valor de um campo em um _array_. Veja essa [lista](https://docs.mongodb.com/manual/reference/operator/aggregation/group/#accumulators-group) de operadores para entender mais a fundo quais pode usar. 
+O interessante deste operador de agregação é executar operação com os campos dos documentos agrupados, como `$sum`, `$avg`, `$push` de um valor de um campo em um _array_. Veja essa [lista](https://docs.mongodb.com/manual/reference/operator/aggregation/group/#accumulators-group) de operadores para entender mais a fundo quais pode usar. 
 
 Veja o exemplo abaixo para entender o funcionamento do operador, com campo `_id` definido como `null`.
 
@@ -299,9 +299,11 @@ db.digimons.aggregate([
 // Resultado 
 { "_id" : null, "total" : 249 }
 ```
-Esse exemplo soma a quantidade de documentos na coleção `digimons`, pois seleciona todos os documentos e soma 1 para cada. Se fosse 2 no valor do campo, somaria 2 para cada documento e o "total" seria 498.
 
-Agora se definir um campo dentro do `$sum`, ou outro [operador de acumulação](https://docs.mongodb.com/manual/reference/operator/aggregation/group/#accumulator-operator), o `$group` usa o valor desse campo para executar essa acumulação.
+No exemplo acima, a quantidade de documentos na coleção `digimons` é somada, pois todos os documentos são selecionados e se soma 1 para cada. Se o valor do campo `$sum` fosse 2, somaria 2 para cada documento e então o "total" seria 498.
+
+
+Se você definir um campo dentro do `$sum`, ou outro [operador de acumulação](https://docs.mongodb.com/manual/reference/operator/aggregation/group/#accumulator-operator), o `$group` usará o valor desse campo para executar a acumulação.
 
 Alguns deles são:
 
@@ -354,7 +356,21 @@ db.digimons.aggregate([
 
 ## Exercícios
 
+1. Blue Monday: encontre todos os digimons do attribute Water.
 
+2. Misirlou: altere a query de forma que os documentos também tenham o campo memory maior ou igual a 80.
+
+3. Pipeline: adicione a query anterior um novo estágio, de maneira que só os campor stage, name, memory e attribute seja retornados.
+
+4. Earth, Wind and Fire: selecione documentos com attribute Earth, Fire ou Wind digimons, projete apenas name e attribute.
+
+5. Nitro: retorne apenas o digimon com o maior valor no campo "spd".
+
+6. O Mago é Implacável: ache qual digimon tem o maior valor do campo "int", renomeie o campo "int" por poderMagico, "sp" por mana e adicione o campo "mago" com valor Patolino.
+
+7. Push it to the limit: selecione 7 digimons com maiores valores de "memory" e coloque seus nomes num array no campo names.
+
+8. Changes: Encontre a média dos campos hp, sp, atk, def, int, spd; arrendonde os calores para números inteiros e nomeie os campos de sáida como mediaHp, mediaSp, mediaAtk, mediaDef, mediaInt e mediaSpd.
 
 ## Recursos Adicionais
 
