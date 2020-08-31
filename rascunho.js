@@ -1,4 +1,4 @@
-// encontre digimons com sp menor ou igual a 50 e atk maior que 310
+// * encontre digimons com sp menor ou igual a 50 e atk maior que 310
 db.digimons.aggregate([
     {
         $match: {
@@ -12,7 +12,7 @@ db.digimons.aggregate([
     },
 ])
 
-// encontre digimons com o campo memory menor ou igual a 2
+// * encontre digimons com o campo memory menor ou igual a 2
 
 db.digimons.aggregate([
     {
@@ -24,7 +24,7 @@ db.digimons.aggregate([
 .pretty();
 
 
-// o mago é implacável, ache qual digimon tem o maior valor do campo int
+// o mago é implacável, ache qual digimon tem o maior valor do campo int, renomeie o campo int por poderMagico, "sp" por mana e adicione o campo "mago" com valor Patolino
 
 db.digimons.aggregate([
     {
@@ -32,7 +32,14 @@ db.digimons.aggregate([
             "int": -1
         },
     },
-    { $limit: 1 }
+    { $limit: 1 },
+    { 
+        $project: {
+            "mago": "Patolino",
+            "poderMagico": "$int",
+            "mana": "$sp"
+        }
+}
 ]);
 
 // agrupe digimons por tipo e crie um array como os nomes deles

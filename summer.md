@@ -204,10 +204,13 @@ db.example.aggregate([
 	"novo_id": ObjectId("5e7bc243b642fc6050badb13")
 }
 ```
+### Fixação 
 
-<!-- ```jsx
+Ainda no banco usado acima, 
 
-``` -->
+```jsx
+
+```
 
 ### `$sort:` ordena os documentos de saída de acordo com o campo definido, de forma decrescente ou crescente.
 
